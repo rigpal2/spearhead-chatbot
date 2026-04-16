@@ -1,6 +1,9 @@
 'use client';
 
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, memo } from 'react';
+import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -9,21 +12,43 @@ interface Message {
   isStreaming?: boolean;
 }
 
-const EXAMPLE_QUESTIONS = [
-  "What's the makeup torque for 2-7/8\" Spearhead?",
-  "How does Spearhead compare to PH6 on wear life?",
-  "What material grade is 2-3/8\" Spearhead?",
-  "What's the tool joint OD for 2-7/8\"?",
-  "Is Spearhead gas-tight?",
-  "What thread compound should I use?",
+interface ParsedMessage {
+  body: string;
+  options: string[];
+}
+
+const STARTER_QUESTIONS = [
+  "What's the rotating torque for 2-7/8\" Spearhead?",
+  "How does Spearhead compare to PH6?",
+  "What material grade is Spearhead P-110?",
+  "Tell me about the Spearhead connection design",
 ];
+
+// Parse `[[OPTIONS: a | b | c]]` directive out of assistant messages — render as buttons.
+function parseMessage(content: string): ParsedMessage {
+  const re = /\[\[OPTIONS:\s*([^\]]+?)\]\]/i;
+  const match = content.match(re);
+  if (!match) return { body: content, options: [] };
+  const options = match[1]
+    .split('|')
+    .map(s => s.trim())
+    .filter(Boolean);
+  const body = content.replace(re, '').trim();
+  return { body, options };
+}
+
+function formatTime(d: Date): string {
+  return d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+}
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const historyRef = useRef<Message[]>([]);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -33,10 +58,15 @@ export default function ChatPage() {
     scrollToBottom();
   }, [messages, scrollToBottom]);
 
-  async function sendMessage(text: string) {
+  useEffect(() => {
+    historyRef.current = messages;
+  }, [messages]);
+
+  const sendMessage = useCallback(async (text: string) => {
     if (!text.trim() || isLoading) return;
 
     const userMessage: Message = { role: 'user', content: text.trim() };
+    const history = historyRef.current.map(m => ({ role: m.role, content: m.content }));
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
@@ -48,7 +78,7 @@ export default function ChatPage() {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text.trim() }),
+        body: JSON.stringify({ message: text.trim(), history }),
       });
 
       if (!response.ok) {
@@ -124,7 +154,7 @@ export default function ChatPage() {
       setIsLoading(false);
       inputRef.current?.focus();
     }
-  }
+  }, [isLoading]);
 
   function handleKeyDown(e: React.KeyboardEvent) {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -134,81 +164,62 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-slate-950">
+    <div className="flex flex-col h-screen" style={{ background: '#FAFAFA' }}>
       {/* Header */}
-      <header className="flex-shrink-0 border-b border-slate-800 bg-slate-900/80 backdrop-blur-sm">
-        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <div>
-              <h1 className="text-base font-semibold text-white tracking-tight">Spearhead Technical Assistant</h1>
-              <p className="text-[11px] text-slate-400">by RigPal</p>
+      <header
+        className="flex-shrink-0 border-b"
+        style={{ borderColor: '#E4E4E7', background: '#FFFFFF' }}
+      >
+        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/rigpal-logo.png"
+              alt="RigPal"
+              width={110}
+              height={38}
+              priority
+              className="h-8 w-auto"
+            />
+            <div className="hidden sm:block w-px h-6" style={{ background: '#E4E4E7' }} />
+            <div className="hidden sm:block">
+              <div className="text-[13px] font-semibold" style={{ color: '#09090B', fontFamily: "'Bricolage Grotesque', system-ui, sans-serif" }}>
+                Spearhead Technical Assistant
+              </div>
+              <div className="text-[11px]" style={{ color: '#71717A' }}>
+                Tejas Tubular premium workstring specs
+              </div>
             </div>
           </div>
+          <a
+            href="https://rigpal.com"
+            target="_blank"
+            rel="noopener"
+            className="text-xs font-medium px-3 py-1.5 rounded-md transition-colors hidden md:inline-flex items-center gap-1.5"
+            style={{ color: '#3F3F46', background: '#F4F4F5' }}
+          >
+            rigpal.com
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M7 17L17 7M17 7H7M17 7v10" />
+            </svg>
+          </a>
         </div>
       </header>
 
       {/* Messages */}
-      <main className="flex-1 overflow-y-auto">
+      <main ref={scrollContainerRef} className="flex-1 overflow-y-auto">
         <div className="max-w-3xl mx-auto px-4 py-6">
           {messages.length === 0 ? (
-            <div className="flex flex-col items-center justify-center min-h-[60vh] text-center">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-6">
-                <svg className="w-9 h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-semibold text-white mb-2">
-                Spearhead Technical Assistant
-              </h2>
-              <p className="text-slate-400 mb-8 max-w-md text-sm leading-relaxed">
-                Ask me anything about Spearhead connections — torque specs, sizing, design features, wear life, comparisons, and running procedures.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full max-w-lg">
-                {EXAMPLE_QUESTIONS.map((q, i) => (
-                  <button
-                    key={i}
-                    onClick={() => sendMessage(q)}
-                    className="text-left px-3 py-2.5 rounded-lg border border-slate-700/50 bg-slate-900/50 text-slate-300 text-sm hover:bg-slate-800/80 hover:border-slate-600 transition-colors"
-                  >
-                    {q}
-                  </button>
-                ))}
-              </div>
-            </div>
+            <LandingState onQuestionClick={sendMessage} />
           ) : (
-            <div className="space-y-4">
+            <div className="space-y-5">
               {messages.map((msg, i) => (
-                <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div
-                    className={`max-w-[85%] rounded-2xl px-4 py-3 ${
-                      msg.role === 'user'
-                        ? 'bg-orange-600 text-white'
-                        : 'bg-slate-800/80 text-slate-100 border border-slate-700/50'
-                    }`}
-                  >
-                    <div className="text-sm leading-relaxed whitespace-pre-wrap">
-                      {msg.content}
-                      {msg.isStreaming && (
-                        <span className="inline-block w-1.5 h-4 bg-orange-400 ml-0.5 animate-pulse rounded-sm" />
-                      )}
-                    </div>
-
-                    {/* Sources */}
-                    {msg.sources && msg.sources.length > 0 && !msg.isStreaming && (
-                      <SourcesSection sources={msg.sources} />
-                    )}
-                  </div>
-                </div>
+                <MessageBubble
+                  key={i}
+                  msg={msg}
+                  onOptionClick={sendMessage}
+                  disabled={isLoading}
+                  isLast={i === messages.length - 1}
+                />
               ))}
               <div ref={messagesEndRef} />
             </div>
@@ -217,12 +228,18 @@ export default function ChatPage() {
       </main>
 
       {/* Footer disclaimer */}
-      <div className="flex-shrink-0 text-center py-1.5 text-[10px] text-slate-500 bg-slate-950">
+      <div
+        className="flex-shrink-0 text-center py-1.5 text-[10px]"
+        style={{ color: '#A1A1AA', background: '#FAFAFA' }}
+      >
         Powered by RigPal. Data limited to 2-3/8&quot; and 2-7/8&quot; Spearhead P-110. Always verify critical values against official Tejas Tubular documentation.
       </div>
 
       {/* Input */}
-      <footer className="flex-shrink-0 border-t border-slate-800 bg-slate-900/80 backdrop-blur-sm">
+      <footer
+        className="flex-shrink-0 border-t"
+        style={{ borderColor: '#E4E4E7', background: '#FFFFFF' }}
+      >
         <div className="max-w-3xl mx-auto px-4 py-3">
           <div className="flex items-end gap-2">
             <textarea
@@ -233,8 +250,22 @@ export default function ChatPage() {
               placeholder="Ask about Spearhead connections..."
               rows={1}
               disabled={isLoading}
-              className="flex-1 resize-none rounded-xl border border-slate-700 bg-slate-800/50 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 disabled:opacity-50"
-              style={{ maxHeight: '120px' }}
+              className="flex-1 resize-none rounded-xl px-4 py-2.5 text-[15px] focus:outline-none disabled:opacity-50 transition-colors"
+              style={{
+                border: '1px solid #D4D4D8',
+                background: '#FAFAFA',
+                color: '#09090B',
+                fontFamily: "'DM Sans', system-ui, sans-serif",
+                maxHeight: '120px',
+              }}
+              onFocus={e => {
+                e.currentTarget.style.borderColor = '#1E4D8C';
+                e.currentTarget.style.background = '#FFFFFF';
+              }}
+              onBlur={e => {
+                e.currentTarget.style.borderColor = '#D4D4D8';
+                e.currentTarget.style.background = '#FAFAFA';
+              }}
               onInput={e => {
                 const target = e.target as HTMLTextAreaElement;
                 target.style.height = 'auto';
@@ -244,7 +275,11 @@ export default function ChatPage() {
             <button
               onClick={() => sendMessage(input)}
               disabled={!input.trim() || isLoading}
-              className="flex-shrink-0 w-10 h-10 rounded-xl bg-orange-600 text-white flex items-center justify-center hover:bg-orange-500 disabled:opacity-30 disabled:hover:bg-orange-600 transition-colors"
+              aria-label="Send message"
+              className="flex-shrink-0 w-11 h-11 rounded-xl text-white flex items-center justify-center disabled:opacity-30 transition-all"
+              style={{
+                background: input.trim() && !isLoading ? '#1E4D8C' : '#A1A1AA',
+              }}
             >
               {isLoading ? (
                 <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
@@ -263,29 +298,223 @@ export default function ChatPage() {
   );
 }
 
+function LandingState({ onQuestionClick }: { onQuestionClick: (q: string) => void }) {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-[65vh] text-center">
+      <div
+        className="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 shadow-sm"
+        style={{ background: '#FFFFFF', border: '1px solid #E4E4E7' }}
+      >
+        <Image src="/rigpal-logo.png" alt="RigPal" width={60} height={21} />
+      </div>
+      <h1
+        className="text-2xl sm:text-3xl font-semibold mb-3 tracking-tight"
+        style={{ color: '#09090B', fontFamily: "'Bricolage Grotesque', system-ui, sans-serif" }}
+      >
+        Spearhead Technical Assistant
+      </h1>
+      <p
+        className="mb-10 max-w-lg text-[15px] leading-relaxed"
+        style={{ color: '#52525B' }}
+      >
+        Ask me about Spearhead premium workstring connections — torque specs, dimensions,
+        wear life, running procedures, and comparisons to PH6.
+      </p>
+
+      <div className="text-xs uppercase tracking-wider mb-3 font-semibold" style={{ color: '#71717A' }}>
+        Try asking
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full max-w-2xl">
+        {STARTER_QUESTIONS.map((q, i) => (
+          <button
+            key={i}
+            onClick={() => onQuestionClick(q)}
+            className="text-left px-4 py-3.5 rounded-xl text-[14px] transition-all group"
+            style={{
+              border: '1px solid #E4E4E7',
+              background: '#FFFFFF',
+              color: '#18181B',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.borderColor = '#1E4D8C';
+              e.currentTarget.style.background = '#F8FAFC';
+              e.currentTarget.style.boxShadow = '0 1px 3px rgba(30, 77, 140, 0.08)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.borderColor = '#E4E4E7';
+              e.currentTarget.style.background = '#FFFFFF';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+          >
+            <div className="flex items-start gap-2.5">
+              <div
+                className="mt-0.5 w-5 h-5 rounded-md flex-shrink-0 flex items-center justify-center"
+                style={{ background: '#EEF4FF', color: '#1E4D8C' }}
+              >
+                <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <span className="leading-snug">{q}</span>
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const MessageBubble = memo(function MessageBubble({
+  msg,
+  onOptionClick,
+  disabled,
+  isLast,
+}: {
+  msg: Message;
+  onOptionClick: (text: string) => void;
+  disabled: boolean;
+  isLast: boolean;
+}) {
+  const parsed = msg.role === 'assistant' ? parseMessage(msg.content) : { body: msg.content, options: [] };
+  const isEmpty = msg.role === 'assistant' && !parsed.body.trim() && msg.isStreaming;
+
+  if (msg.role === 'user') {
+    return (
+      <div className="flex justify-end msg-enter">
+        <div
+          className="max-w-[85%] rounded-2xl rounded-tr-md px-4 py-2.5 text-[15px] leading-relaxed"
+          style={{ background: '#1E4D8C', color: '#FFFFFF' }}
+        >
+          {msg.content}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex justify-start gap-2.5 msg-enter">
+      <div
+        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center mt-0.5 overflow-hidden"
+        style={{ background: '#FFFFFF', border: '1px solid #E4E4E7' }}
+      >
+        <Image src="/rigpal-logo.png" alt="RigPal" width={24} height={8} />
+      </div>
+      <div className="max-w-[calc(100%-2.75rem)] flex-1">
+        <div
+          className="rounded-2xl rounded-tl-md px-4 py-3"
+          style={{
+            background: '#FFFFFF',
+            border: '1px solid #E4E4E7',
+            boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
+          }}
+        >
+          {isEmpty ? (
+            <div className="typing-dots">
+              <span />
+              <span />
+              <span />
+            </div>
+          ) : (
+            <div className="prose-rp">
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  // Wrap tables so they can scroll horizontally on mobile
+                  table: ({ children, ...props }) => (
+                    <div className="table-wrap">
+                      <table {...props}>{children}</table>
+                    </div>
+                  ),
+                  a: ({ href, children, ...props }) => (
+                    <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+                      {children}
+                    </a>
+                  ),
+                }}
+              >
+                {parsed.body}
+              </ReactMarkdown>
+              {msg.isStreaming && (
+                <span
+                  className="inline-block w-[3px] h-[14px] ml-0.5 align-middle animate-pulse"
+                  style={{ background: '#DC2626', borderRadius: '1px' }}
+                />
+              )}
+            </div>
+          )}
+
+          {/* Disambiguation / follow-up option buttons */}
+          {!msg.isStreaming && parsed.options.length > 0 && (
+            <div className="mt-3 pt-3 flex flex-wrap gap-2" style={{ borderTop: '1px solid #F4F4F5' }}>
+              {parsed.options.map((opt, i) => (
+                <button
+                  key={i}
+                  onClick={() => onOptionClick(opt)}
+                  disabled={disabled || !isLast}
+                  className="text-[13px] font-medium px-3 py-1.5 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{
+                    border: '1px solid #1E4D8C',
+                    color: '#1E4D8C',
+                    background: '#FFFFFF',
+                  }}
+                  onMouseEnter={e => {
+                    if (!e.currentTarget.disabled) {
+                      e.currentTarget.style.background = '#1E4D8C';
+                      e.currentTarget.style.color = '#FFFFFF';
+                    }
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = '#FFFFFF';
+                    e.currentTarget.style.color = '#1E4D8C';
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {msg.sources && msg.sources.length > 0 && !msg.isStreaming && (
+            <SourcesSection sources={msg.sources} />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+});
+
 function SourcesSection({ sources }: { sources: string[] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-2.5 pt-2 border-t border-slate-700/50">
+    <div
+      className="mt-3 pt-2.5"
+      style={{ borderTop: '1px solid #F4F4F5' }}
+    >
       <button
         onClick={() => setOpen(!open)}
-        className="text-xs text-slate-400 hover:text-slate-300 flex items-center gap-1 transition-colors"
+        className="text-[11px] flex items-center gap-1.5 transition-colors font-medium uppercase tracking-wider"
+        style={{ color: '#71717A' }}
       >
         <svg
-          className={`w-3 h-3 transition-transform ${open ? 'rotate-90' : ''}`}
+          className="w-3 h-3 transition-transform"
+          style={{ transform: open ? 'rotate(90deg)' : 'none' }}
           viewBox="0 0 24 24"
           fill="currentColor"
         >
           <path d="M8 5v14l11-7z" />
         </svg>
-        {sources.length} source{sources.length !== 1 ? 's' : ''} referenced
+        {sources.length} source{sources.length !== 1 ? 's' : ''}
       </button>
       {open && (
-        <ul className="mt-1.5 space-y-0.5">
+        <ul className="mt-2 space-y-1">
           {sources.map((s, i) => (
-            <li key={i} className="text-xs text-slate-500 pl-4">
-              {s}
+            <li
+              key={i}
+              className="text-[12px] pl-4 leading-snug"
+              style={{ color: '#52525B' }}
+            >
+              • {s}
             </li>
           ))}
         </ul>
