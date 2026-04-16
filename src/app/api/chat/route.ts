@@ -2,7 +2,8 @@ import Anthropic from '@anthropic-ai/sdk';
 import { getIndex } from '@/lib/search';
 import { NextRequest } from 'next/server';
 
-const anthropic = new Anthropic();
+const apiKey = process.env.ANTHROPIC_API_KEY;
+const anthropic = apiKey ? new Anthropic({ apiKey }) : null;
 
 const SYSTEM_PROMPT = `You are the Spearhead Technical Assistant, a chatbot built by RigPal to answer technical questions about Spearhead premium workstring connections manufactured by Tejas Tubular.
 
@@ -53,6 +54,13 @@ export async function POST(req: NextRequest) {
 
     const context = buildContextBlock(results);
     const sources = [...new Set(results.map(r => r.source))];
+
+    if (!anthropic) {
+      return Response.json(
+        { error: 'Chatbot is being configured. Please check back shortly.' },
+        { status: 503 }
+      );
+    }
 
     // Stream the response
     const stream = anthropic.messages.stream({

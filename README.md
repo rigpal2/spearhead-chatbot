@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Spearhead Technical Chatbot
 
-## Getting Started
+RAG-powered chatbot for Spearhead premium workstring connections by RigPal.
 
-First, run the development server:
+**Live:** https://spearhead-chatbot.vercel.app (will migrate to spearhead.rigpal.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Architecture
+
+```
+User Query → Next.js API Route → BM25 Search (in-memory) → Claude Haiku → Streamed Response
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Corpus**: 69 chunks from 12 wiki sources (Spearhead specs, torque data, competitor comparisons)
+- **Search**: BM25 with OCTG domain synonyms, metadata filtering, Spearhead boost
+- **LLM**: Claude Haiku 4.5 with strict grounding prompt — only answers from corpus context
+- **Frontend**: Next.js App Router, Tailwind CSS, SSE streaming, mobile-first
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+cp .env.example .env.local  # Then add your API key
+npm run dev
+```
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `ANTHROPIC_API_KEY` | Yes | Get from console.anthropic.com |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setting on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+vercel env add ANTHROPIC_API_KEY production
+# Paste the key when prompted
+vercel --prod --scope alex-5476s-projects
+```
 
-## Deploy on Vercel
+## Updating the Corpus
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+When wiki data changes, regenerate chunks:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+node scripts/ingest.mjs
+# Then redeploy
+vercel --prod --scope alex-5476s-projects
+```
+
+## Coverage
+
+- 2-3/8" 5.95# P-110 Spearhead (full specs)
+- 2-7/8" 7.90# P-110 Spearhead (full specs)
+- Torque data (MUT, rotating, yield, friction factors)
+- Design features (double-shoulder, inertia-welded TJ, internal torque shoulder)
+- Wear life analysis (Spearhead vs PH6)
+- Competitor comparisons (PH6, BEN-HT6, CS, TTS6-Black, FSS-265)
+- Materials and grades (P-110, grade corrections, 125 ksi)
+- Thread compound (BOL 2000, JetLube ThreadSeal)
+- Recut options (TTXS, TTNY, TTUS, TTUS-HT)
+- Licensee program
+
+## Limitations
+
+- Only 2-3/8" and 2-7/8" Spearhead data available
+- No pricing, delivery, or sales information
+- No internal business documents in corpus
