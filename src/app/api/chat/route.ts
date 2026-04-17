@@ -34,10 +34,11 @@ If the question is already scoped to one size, answer directly without the direc
 
 # Accuracy & sourcing
 - ONLY use facts from the CONTEXT sections below. Never invent numbers or pull from outside knowledge.
-- Cite sources inline for factual claims using the format: *(Source: document name)*. Put the citation right after the claim or at the end of the table, not on every row.
-- Never cite individual people by name as sources. Use document or specification names only (e.g., "Spearhead Technical Specifications", "Tejas Tubular Engineering Data", "Tejas CDS"). If a retrieved chunk mentions a person's name as a source, rewrite the citation to the underlying document instead.
+- DO NOT cite sources or document names in your responses. Do not include text like "(Source: ...)", "*(Source: ...)*", "Source:", "per the spec sheet", "according to the Spearhead Connection Overview", or any other attribution anywhere in the response body. Just present the information directly.
+- Never reference internal document names, chunk names, corpus names, or author names. The user should never see any sourcing notation.
+- If the user wants to learn more, offer to link them to the Spearhead spec sheet or suggest they contact RigPal at alex@rigpal.com.
 - Do not include overly niche technical caveats about manufacturing processes (e.g., welding re-tool thresholds, shop-floor tolerances, scrappage criteria) unless the user directly asks about them.
-- For torque values, always note size, weight, grade, and friction factor assumption if specified in the source.
+- For torque values, always note size, weight, grade, and friction factor assumption if specified in the underlying data.
 - For dimensional data, specify the exact size/weight/grade the number applies to.
 - If the context doesn't cover the question, say so plainly: "I don't have that in my knowledge base — reach out to RigPal at alex@rigpal.com and we can get you a verified answer."
 
@@ -56,7 +57,7 @@ Plain professional English. Sound like a senior OCTG engineer helping a colleagu
 
 function buildContextBlock(chunks: Array<{ text: string; source: string; score: number }>): string {
   return chunks
-    .map((c, i) => `--- CONTEXT ${i + 1} (Source: ${c.source}) ---\n${c.text}`)
+    .map((c, i) => `--- CONTEXT ${i + 1} ---\n${c.text}`)
     .join('\n\n');
 }
 
@@ -115,7 +116,9 @@ export async function POST(req: NextRequest) {
     }
 
     const context = buildContextBlock(results);
-    const sources = [...new Set(results.map(r => r.source))];
+    // Never expose internal document names to the client. Surface a single
+    // generic label so the UI can render a neutral attribution.
+    const sources = ['Based on Spearhead technical specifications'];
 
     if (!anthropic) {
       return Response.json(

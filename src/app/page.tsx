@@ -484,41 +484,15 @@ const MessageBubble = memo(function MessageBubble({
 });
 
 function SourcesSection({ sources }: { sources: string[] }) {
-  const [open, setOpen] = useState(false);
+  if (!sources || sources.length === 0) return null;
+  const label = sources[0] || 'Based on Spearhead technical specifications';
 
   return (
     <div
-      className="mt-3 pt-2.5"
-      style={{ borderTop: '1px solid #F4F4F5' }}
+      className="mt-3 pt-2.5 text-[11px] italic"
+      style={{ borderTop: '1px solid #F4F4F5', color: '#71717A' }}
     >
-      <button
-        onClick={() => setOpen(!open)}
-        className="text-[11px] flex items-center gap-1.5 transition-colors font-medium uppercase tracking-wider"
-        style={{ color: '#71717A' }}
-      >
-        <svg
-          className="w-3 h-3 transition-transform"
-          style={{ transform: open ? 'rotate(90deg)' : 'none' }}
-          viewBox="0 0 24 24"
-          fill="currentColor"
-        >
-          <path d="M8 5v14l11-7z" />
-        </svg>
-        {sources.length} source{sources.length !== 1 ? 's' : ''}
-      </button>
-      {open && (
-        <ul className="mt-2 space-y-1">
-          {sources.map((s, i) => (
-            <li
-              key={i}
-              className="text-[12px] pl-4 leading-snug"
-              style={{ color: '#52525B' }}
-            >
-              • {s}
-            </li>
-          ))}
-        </ul>
-      )}
+      {label}
     </div>
   );
 }

@@ -100,25 +100,26 @@ const PERSONAL_NAMES = [
   'Dimitri',
 ];
 
-function stripPersonalNames(text, topic) {
-  // Remove "Source: <Name>, ..." attributions entirely and replace with a generic doc reference.
-  const generic = `Source: ${topic}`;
+function stripSourceAttributions(text) {
   let out = text;
 
-  // Collapse source lines that lead with personal names into the generic form.
-  out = out.replace(
-    /Source:\s*[^\n]*?(?:Dimitris(?:\s+Katsareas)?|Katsareas|Alex\s+Champagne|John\s+Champagne|Al\s+Aung|Frank\s+Martinez|Alex\s+Zuniga)[^\n]*/gi,
-    generic
-  );
+  // Remove bullet lines that are entirely a source attribution: "- Source: ..."
+  out = out.replace(/^\s*[-*]\s*Source:\s*[^\n]*\n?/gim, '');
+  // Remove plain lines that start with "Source: ..."
+  out = out.replace(/^\s*Source:\s*[^\n]*\n?/gim, '');
+  // Remove parenthetical inline citations: "(Source: ...)" or "*(Source: ...)*"
+  out = out.replace(/\*?\(Source:\s*[^)]*\)\*?/gi, '');
+  // Remove italicized inline citations: "*Source: ...*"
+  out = out.replace(/\*Source:\s*[^*\n]*\*/gi, '');
 
-  // Strip any remaining inline personal-name occurrences.
+  // Strip any remaining inline personal-name occurrences (defense in depth).
   for (const name of PERSONAL_NAMES) {
     const re = new RegExp(`\\b${name.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'g');
     out = out.replace(re, 'Tejas Engineering');
   }
 
-  // Deduplicate consecutive generic source lines.
-  out = out.replace(/(Source:\s*[^\n]+)(?:\n+\1)+/g, '$1');
+  // Collapse 3+ blank lines left behind by removals.
+  out = out.replace(/\n{3,}/g, '\n\n');
 
   return out;
 }
@@ -227,7 +228,7 @@ for (const source of SOURCES) {
       let text = chunk.text;
       text = stripEmails(text);
       text = stripPhoneNumbers(text);
-      text = stripPersonalNames(text, source.defaults.topic);
+      text = stripSourceAttributions(text);
 
       if (text.length < 80) continue;
 

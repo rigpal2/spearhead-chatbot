@@ -13,7 +13,7 @@
   },
   {
     "id": "chunk-1",
-    "text": "[SPEARHEAD Connection - Key Specifications]\n\n### 2-7/8\" 7.90ppf P-110\n- Tool Joint OD: 3.525\"\n- Special Clearance (SC) OD: 3.312\"\n- Connection ID: 2.265\"\n- Min Yield Strength (TJ): 125 ksi (Tejas heat-treated P-110 is typically 125 ksi)\n- Rotating Torque: 15,700 ft-lbs (Aug 2025 CDS version)\n- Source: Spearhead Connection Overview\n\n### 2-3/8\" 5.95ppf P-110\n- Tool Joint OD: 3.000\"\n- Special Clearance (SC) OD: 2.782\"\n- Connection ID: (same thread family)\n- Source: Spearhead Connection Overview\n\n### Make-Up Torques (2-7/8\" 7.90# P-110)\n- Minimum MUT: 2,000 ft-lbs\n- Optimum MUT: 4,250 ft-lbs\n- Maximum MUT: 6,500 ft-lbs\n- Source: Spearhead Connection Overview\n\nNote: Spearhead MUT values appear lower than competitors (FSS-265 max 7,200; BenHT6 max 7,000) because Tejas uses a different torque philosophy than drill pipe practice. Tejas publishes Rotating/Operating and Yield Torques in addition to MUT, which competitors do not.",
+    "text": "[SPEARHEAD Connection - Key Specifications]\n\n### 2-7/8\" 7.90ppf P-110\n- Tool Joint OD: 3.525\"\n- Special Clearance (SC) OD: 3.312\"\n- Connection ID: 2.265\"\n- Min Yield Strength (TJ): 125 ksi (Tejas heat-treated P-110 is typically 125 ksi)\n- Rotating Torque: 15,700 ft-lbs (Aug 2025 CDS version)\n\n### 2-3/8\" 5.95ppf P-110\n- Tool Joint OD: 3.000\"\n- Special Clearance (SC) OD: 2.782\"\n- Connection ID: (same thread family)\n\n### Make-Up Torques (2-7/8\" 7.90# P-110)\n- Minimum MUT: 2,000 ft-lbs\n- Optimum MUT: 4,250 ft-lbs\n- Maximum MUT: 6,500 ft-lbs\n\nNote: Spearhead MUT values appear lower than competitors (FSS-265 max 7,200; BenHT6 max 7,000) because Tejas uses a different torque philosophy than drill pipe practice. Tejas publishes Rotating/Operating and Yield Torques in addition to MUT, which competitors do not.",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Key Specifications",
@@ -30,7 +30,7 @@
   },
   {
     "id": "chunk-2",
-    "text": "[SPEARHEAD Connection - Design Features]\n\n### Double-Shoulder Design\n- Has both external and internal torque shoulders\n- Internal torque shoulder (pin nose to box shoulder) provides torque capacity independent of OD\n- \"Torque is from internal shoulder and independent of OD for TTWS and Spearhead connection\" -- Tejas Engineering, Jan 30 2025\n- This is a key advantage: torque capacity is maintained even as TJ OD wears down\n\n### Inertia-Welded Tool Joints\n- Reduced ovality and eccentricity vs upset-end connections\n- Makes pin nose to box shoulder contact a true full-face contact\n- Makes torque calculations more accurate\n- This benefit is more significant for Spearhead (with ID torque shoulder) than for TTS6-Black (which has no ID torque shoulder)\n- Source: Spearhead Connection Overview\n\n### Wear Advantage Over PH6\n\n#### 2-7/8\" Size\n- Spearhead: 6.43% OD-to-SC range (3.525\" to 3.312\")\n- PH6: 3.80% OD-to-SC range (3.438\" to 3.312\")\n- **Spearhead has 69% more remaining wear life between standard OD and SC compared to PH6**\n\n#### 2-3/8\" Size\n- Spearhead: 7.84% OD-to-SC range (3.000\" to 2.782\")\n- PH6: 4.46% OD-to-SC range (2.906\" to 2.782\")\n- **Spearhead has 75% more remaining wear life compared to PH6**\n\nSource: Spearhead Technical Specifications, Mar 2026",
+    "text": "[SPEARHEAD Connection - Design Features]\n\n### Double-Shoulder Design\n- Has both external and internal torque shoulders\n- Internal torque shoulder (pin nose to box shoulder) provides torque capacity independent of OD\n- \"Torque is from internal shoulder and independent of OD for TTWS and Spearhead connection\" -- Tejas Engineering, Jan 30 2025\n- This is a key advantage: torque capacity is maintained even as TJ OD wears down\n\n### Inertia-Welded Tool Joints\n- Reduced ovality and eccentricity vs upset-end connections\n- Makes pin nose to box shoulder contact a true full-face contact\n- Makes torque calculations more accurate\n- This benefit is more significant for Spearhead (with ID torque shoulder) than for TTS6-Black (which has no ID torque shoulder)\n\n### Wear Advantage Over PH6\n\n#### 2-7/8\" Size\n- Spearhead: 6.43% OD-to-SC range (3.525\" to 3.312\")\n- PH6: 3.80% OD-to-SC range (3.438\" to 3.312\")\n- **Spearhead has 69% more remaining wear life between standard OD and SC compared to PH6**\n\n#### 2-3/8\" Size\n- Spearhead: 7.84% OD-to-SC range (3.000\" to 2.782\")\n- PH6: 4.46% OD-to-SC range (2.906\" to 2.782\")\n- **Spearhead has 75% more remaining wear life compared to PH6**\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Design Features",
@@ -46,7 +46,7 @@
   },
   {
     "id": "chunk-3",
-    "text": "[SPEARHEAD Connection - Torque Technical Details]\n\n### Torque Calculation Method\n- Yield Torque: calculated from modified API RP 7G \"screwjack\" formula, adapted for double shoulder connections\n- Rotating/Operating Torque: calculated from Yield Torque using Safety Factor (SF = 80% for Tejas)\n- Tested and proven accurate per Tejas torque-to-yield tests\n- Source: Spearhead Connection Overview\n\n### Torque vs Competitors\nHydril PH6 and others (VAM, NORIS, TPS, Workstrings Intl) only publish min/opt/max Make-up Torques. They do NOT publish Rotating/Operating or Yield Torques.\n\nCompanies that DO publish Rotating and Yield Torques: TEJAS, BENOIT, HUNTING, PATTERSON RENTAL, PATTERSON SERVICES, QUAIL, CASEY, EAGLE, WOOLLEY.\n\nSource: Spearhead Connection Overview\n\n### Torque-Turn Running\n- Tejas Engineering does not believe Tejas has ever run Spearhead without torque-turn monitoring\n- But does not see a problem running without it\n- Must make up to at least min MUT to engage torque shoulders\n- Can base on hydraulic pressure gauge reading on tongs\n- Source: Spearhead Connection Overview\n\n### Asterisked Torque Figures\nTorque figures with asterisk on CDS can be downrated based on rig equipment capability (tongs, swivel, rotary table). Meaning: torque as high as you can without damaging the tube.\nSource: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Torque Technical Details]\n\n### Torque Calculation Method\n- Yield Torque: calculated from modified API RP 7G \"screwjack\" formula, adapted for double shoulder connections\n- Rotating/Operating Torque: calculated from Yield Torque using Safety Factor (SF = 80% for Tejas)\n- Tested and proven accurate per Tejas torque-to-yield tests\n\n### Torque vs Competitors\nHydril PH6 and others (VAM, NORIS, TPS, Workstrings Intl) only publish min/opt/max Make-up Torques. They do NOT publish Rotating/Operating or Yield Torques.\n\nCompanies that DO publish Rotating and Yield Torques: TEJAS, BENOIT, HUNTING, PATTERSON RENTAL, PATTERSON SERVICES, QUAIL, CASEY, EAGLE, WOOLLEY.\n\n### Torque-Turn Running\n- Tejas Engineering does not believe Tejas has ever run Spearhead without torque-turn monitoring\n- But does not see a problem running without it\n- Must make up to at least min MUT to engage torque shoulders\n- Can base on hydraulic pressure gauge reading on tongs\n\n### Asterisked Torque Figures\nTorque figures with asterisk on CDS can be downrated based on rig equipment capability (tongs, swivel, rotary table). Meaning: torque as high as you can without damaging the tube.\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Torque Technical Details",
@@ -58,7 +58,7 @@
   },
   {
     "id": "chunk-4",
-    "text": "[SPEARHEAD Connection - Thread Compound]\n\n- Standard: Best-o-Life (BOL) 2000\n- Alternative: JetLube ThreadSeal (lead/zinc free) is acceptable\n- Any thread compound works as long as friction factor (FF) is accounted for\n- BOL 2000 has FF = 1.0, so listed CDS torques apply directly\n- Different compounds may require ramping torque values up or down based on their FF\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Thread Compound]\n\n- Standard: Best-o-Life (BOL) 2000\n- Alternative: JetLube ThreadSeal (lead/zinc free) is acceptable\n- Any thread compound works as long as friction factor (FF) is accounted for\n- BOL 2000 has FF = 1.0, so listed CDS torques apply directly\n- Different compounds may require ramping torque values up or down based on their FF\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Thread Compound",
@@ -70,7 +70,7 @@
   },
   {
     "id": "chunk-5",
-    "text": "[SPEARHEAD Connection - Identification]\n\n- No permanent identification markings applied beyond stencil (stencil doesn't survive well runs)\n- One licensee up north hard-stamped a single letter on box upset of each recut joint\n- Identification left to discretion of machine shop\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Identification]\n\n- No permanent identification markings applied beyond stencil (stencil doesn't survive well runs)\n- One licensee up north hard-stamped a single letter on box upset of each recut joint\n- Identification left to discretion of machine shop\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Identification",
@@ -82,7 +82,7 @@
   },
   {
     "id": "chunk-6",
-    "text": "[SPEARHEAD Connection - Thread Protectors]\n\n- TEJAS does NOT license thread protector production for Spearhead\n- Mold-injection requires connection drawings, which Tejas does not share\n- TEJAS keeps Spearhead thread protectors always in stock for any volume\n- Contact: Tejas Engineering at Tejas manages thread protector production\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Thread Protectors]\n\n- TEJAS does NOT license thread protector production for Spearhead\n- Mold-injection requires connection drawings, which Tejas does not share\n- TEJAS keeps Spearhead thread protectors always in stock for any volume\n- Contact: Tejas Engineering at Tejas manages thread protector production\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Thread Protectors",
@@ -94,7 +94,7 @@
   },
   {
     "id": "chunk-7",
-    "text": "[SPEARHEAD Connection - Accessories]\n\n### Float Valve Service Connection (2-7/8\" SPH with 2F-3R)\n- Designed for 2F-3R double float valve\n- Service connection OD: 3.625\"\n- Service connection ID: 2.438\" (float bore ID)\n- Uses same thread form as SPH\n- Torque capacity higher than standard 2-7/8 SPH\n- Uses single start SPH thread -- can be recut using same SPH threading insert\n- Cannot use standard 2-7/8 SPH bore (2.265\" ID) because 2F-3R float has 2.406\" OD, which would eliminate ID torque shoulder\n- Target OD around 3.75\" for casing clearance (tubing with HB already ~3.75\")\n- Source: Spearhead Connection Overview\n\n### Pup Joints and Accessories\n- All accessories including pup joints must use 135 KSI min yield mechanical tube or bar stock material\n- Profiled pup joint tube: 135 KSI (meets 125 KSI min requirement)\n- Accessories don't carry a \"grade\" -- only 135 KSI min yield to match TJ connection\n- Source: Spearhead Connection Overview\n\n### Test Plugs\n- Can be made with 1/2\" NPT, 6\" long\n- One pin, one box -- to test TIW valves\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Accessories]\n\n### Float Valve Service Connection (2-7/8\" SPH with 2F-3R)\n- Designed for 2F-3R double float valve\n- Service connection OD: 3.625\"\n- Service connection ID: 2.438\" (float bore ID)\n- Uses same thread form as SPH\n- Torque capacity higher than standard 2-7/8 SPH\n- Uses single start SPH thread -- can be recut using same SPH threading insert\n- Cannot use standard 2-7/8 SPH bore (2.265\" ID) because 2F-3R float has 2.406\" OD, which would eliminate ID torque shoulder\n- Target OD around 3.75\" for casing clearance (tubing with HB already ~3.75\")\n\n### Pup Joints and Accessories\n- All accessories including pup joints must use 135 KSI min yield mechanical tube or bar stock material\n- Profiled pup joint tube: 135 KSI (meets 125 KSI min requirement)\n- Accessories don't carry a \"grade\" -- only 135 KSI min yield to match TJ connection\n\n### Test Plugs\n- Can be made with 1/2\" NPT, 6\" long\n- One pin, one box -- to test TIW valves\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Accessories",
@@ -109,7 +109,7 @@
   },
   {
     "id": "chunk-8",
-    "text": "[SPEARHEAD Connection - Rig Running Procedure]\n\n- TEJAS has a formal rig running procedure document for SPEARHEAD (Rev00, Jan 8 2025)\n- Separate from the standard TEJAS rig running procedure\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Rig Running Procedure]\n\n- TEJAS has a formal rig running procedure document for SPEARHEAD (Rev00, Jan 8 2025)\n- Separate from the standard TEJAS rig running procedure\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Rig Running Procedure",
@@ -121,7 +121,7 @@
   },
   {
     "id": "chunk-9",
-    "text": "[SPEARHEAD Connection - Combined Load Charts]\n\n- Axial + Torque safe operation charts available for SPEARHEAD 2.875\" 7.90ppf P-110 with 126k YS TJs\n- Source: Spearhead Connection Overview",
+    "text": "[SPEARHEAD Connection - Combined Load Charts]\n\n- Axial + Torque safe operation charts available for SPEARHEAD 2.875\" 7.90ppf P-110 with 126k YS TJs\n",
     "source": "Spearhead Connection Overview",
     "sourceFile": "OCTG/Connections/Spearhead.md",
     "section": "Combined Load Charts",
@@ -149,7 +149,7 @@
   },
   {
     "id": "chunk-11",
-    "text": "[Spearhead Connection Design - Compiled Truth]\n\n### Torque Mechanics (Fundamental Design)\n\n- Spearhead torque is generated from the **internal shoulder** (pin nose to box shoulder)\n- External shoulder contribution is **marginal**\n- This is the **opposite** of PH6, where torque comes from the external shoulder\n- Tool joint OD wear does NOT affect torque performance of Spearhead, whereas it will \"cripple PH6\"\n- OD wear DOES affect **tensile efficiency** of the connection\n- Torque is from internal shoulder and independent of OD for both TTWS and Spearhead\n\n\n\n### Connection OD: 3.525\" vs 3.438\"\n\n- Both 3.525\" and 3.438\" OD tool joints produce **identical torque values** for Spearhead (torque comes from internal shoulder, not external)\n- 3.525\" OD provides **more wear life** before reaching special clearance\n- 3.438\" OD is the **same as standard PH6** coupling OD\n\n\n\n### Wear Life Advantage vs PH6\n\n**2-7/8\":**\n- Spearhead OD 3.525\" to SC 3.312\" = 6.43% difference\n- PH6 OD 3.438\" to SC 3.312\" = 3.80% difference\n- **Spearhead has 69% more remaining wear life (OD to SC) compared to PH6**\n\n**2-3/8\":**\n- Spearhead OD 3.000\" to SC 2.782\" = 7.84% difference\n- PH6 OD 2.906\" to SC 2.782\" = 4.46% difference\n- **Spearhead has 75% more remaining wear life compared to PH6**\n\nCorrect terminology: \"remaining upset OD\" or \"remaining wear life\" (similar to \"remaining body wall\" for tube body). Do not call it \"wear area.\"\n\n\n\n### Inertia-Welded TJs vs Upset-End\n\nInertia-welded tool joints (used by Tejas) have reduced ovality and eccentricity issues compared to upset-ends (used by Benoit and PH6 lookalikes). This results in true full-face contact at the internal torque shoulder, making torque calculations accurate.\n\n- This advantage is **more important for Spearhead** than TTS6-Black\n- TTS6-Black (PH6 look-alike) has no ID torque shoulder (there is a gap there)\n- Spearhead's internal shoulder benefits from the precision of inertia-welded TJs\n\n\n\n### BEN-HT6 Technical Critique\n\n1. Upset/TJ length has NO bearing on shoulder contact area — only diameter matters\n2. Same applies for \"torque distribution\" and \"torque stiffness\" — Benoit's claims about these are incorrect\n3. \"Bending flexibility\" is misunderstood — higher bending stiffness is actually BENEFICIAL in workover jobs (more weight on bit, less wasted to friction)\n4. **Contradiction in BEN-HT6 marketing:** Cannot claim \"increased shoulder contact area\" AND \"maintaining compatibility with BTS-6/PH6\" — to be compatible, you must reduce or maintain shoulder area, not increase it",
+    "text": "[Spearhead Connection Design - Compiled Truth]\n\n### Torque Mechanics (Fundamental Design)\n\n- Spearhead torque is generated from the **internal shoulder** (pin nose to box shoulder)\n- External shoulder contribution is **marginal**\n- This is the **opposite** of PH6, where torque comes from the external shoulder\n- Tool joint OD wear does NOT affect torque performance of Spearhead, whereas it will \"cripple PH6\"\n- OD wear DOES affect **tensile efficiency** of the connection\n- Torque is from internal shoulder and independent of OD for both TTWS and Spearhead\n\n### Connection OD: 3.525\" vs 3.438\"\n\n- Both 3.525\" and 3.438\" OD tool joints produce **identical torque values** for Spearhead (torque comes from internal shoulder, not external)\n- 3.525\" OD provides **more wear life** before reaching special clearance\n- 3.438\" OD is the **same as standard PH6** coupling OD\n\n### Wear Life Advantage vs PH6\n\n**2-7/8\":**\n- Spearhead OD 3.525\" to SC 3.312\" = 6.43% difference\n- PH6 OD 3.438\" to SC 3.312\" = 3.80% difference\n- **Spearhead has 69% more remaining wear life (OD to SC) compared to PH6**\n\n**2-3/8\":**\n- Spearhead OD 3.000\" to SC 2.782\" = 7.84% difference\n- PH6 OD 2.906\" to SC 2.782\" = 4.46% difference\n- **Spearhead has 75% more remaining wear life compared to PH6**\n\nCorrect terminology: \"remaining upset OD\" or \"remaining wear life\" (similar to \"remaining body wall\" for tube body). Do not call it \"wear area.\"\n\n### Inertia-Welded TJs vs Upset-End\n\nInertia-welded tool joints (used by Tejas) have reduced ovality and eccentricity issues compared to upset-ends (used by Benoit and PH6 lookalikes). This results in true full-face contact at the internal torque shoulder, making torque calculations accurate.\n\n- This advantage is **more important for Spearhead** than TTS6-Black\n- TTS6-Black (PH6 look-alike) has no ID torque shoulder (there is a gap there)\n- Spearhead's internal shoulder benefits from the precision of inertia-welded TJs\n\n### BEN-HT6 Technical Critique\n\n1. Upset/TJ length has NO bearing on shoulder contact area — only diameter matters\n2. Same applies for \"torque distribution\" and \"torque stiffness\" — Benoit's claims about these are incorrect\n3. \"Bending flexibility\" is misunderstood — higher bending stiffness is actually BENEFICIAL in workover jobs (more weight on bit, less wasted to friction)\n4. **Contradiction in BEN-HT6 marketing:** Cannot claim \"increased shoulder contact area\" AND \"maintaining compatibility with BTS-6/PH6\" — to be compatible, you must reduce or maintain shoulder area, not increase it",
     "source": "Spearhead Design Knowledge",
     "sourceFile": "RigPal/Specs/spearhead-connection-design.md",
     "section": "Compiled Truth",
@@ -165,7 +165,7 @@
   },
   {
     "id": "chunk-12",
-    "text": "[Spearhead Connection Design - Compiled Truth]\n\n### High Torque & Rig Running Procedure\n\n- The asterisk on CDS torque values means: torque can be downrated based on rig equipment capability\n- Practical guidance: torque as high as you can without damaging the tube\n- Tejas merged John's field suggestions with their RRP (Rig Running Procedure) into Rev 01\n- In practice many rigs grip tube body or fade-away instead of TJ only\n\n\n\n### Thread Compound / Dope\n\n- Tejas standardized on Best-o-life 2000 (BOL2000) — lead-free, but expensive and uncommon at rigs\n- CDS torque values calculated at **Friction Factor 1.0** (Friction Coefficient = 0.08)\n- All Tejas test torques were measured using BOL2000\n- \"Approved\" changed to \"Recommended\" with a common 1.0 FF dope option added\n- Specific torque values removed from running procedure text — reference CDS only\n\n\n\n### Make-Up Torque Philosophy\n\nMUT can equal max rotating torque (same as drill pipe approach), so connection doesn't come apart while rotating. Tejas moving away from the term \"optimum MUT\" and replacing maximum MUT with phrasing like \"can be as high as Rotating Torque.\"\n\n\n\n### Used Tubing Recut Options\n\n- 4 alternative connection CDSs available for recut used WTS-6 tubing: TTXS, TTNY, TTUS, TTUS-HT\n- **Caution:** CDS yield/torque values are based on 125 ksi YS material (90% of Tejas P-110)\n- For used tubing from other manufacturers: must verify material grade\n- If material is standard P-110 (110 ksi min) not Tejas-grade: multiply yield/torque values by **0.88 factor** (110/125)\n\n\n\n### TTS6-Black Recut / Rework\n\n- No dedicated recut/rework procedure document exists for TTS6-Black (unlike Spearhead which has one)\n- Inspection procedures for TTS6-Black are on file at Tejas\n- Tejas Engineering may have additional documentation\n\n\n\n### TJ Wear vs Load Capacity (TTS6)\n\n- Analysis exists showing load capacity degradation with wear for TTS6\n- Being complemented with pull capacity, more wear increments, and torque distribution\n- Analysis covers both tube body and upset OD\n- TTWS removed from the analysis\n\n\n\n### Two-Step Connection Design\n\n- Comprehensive report from Tejas Engineering answering many questions about two-step connection design (separate attachment)\n\n\n\n### Key People at Tejas\n\n- **Tejas Engineering** — R&D Director, connection design authority, all technical decisions\n- **Tejas Engineering** — Engineer, confirms technical calculations, connection mechanics\n- **Tejas Engineering** — Manufacturing/procedures, thread compound decisions, inherited from Terry Dobson\n- **Max Jr. Tejeda** — Copied on strategic discussions\n- **Terry Dobson** — Previous procedure author (predecessor to Zuniga)\n\n---",
+    "text": "[Spearhead Connection Design - Compiled Truth]\n\n### High Torque & Rig Running Procedure\n\n- The asterisk on CDS torque values means: torque can be downrated based on rig equipment capability\n- Practical guidance: torque as high as you can without damaging the tube\n- Tejas merged John's field suggestions with their RRP (Rig Running Procedure) into Rev 01\n- In practice many rigs grip tube body or fade-away instead of TJ only\n\n### Thread Compound / Dope\n\n- Tejas standardized on Best-o-life 2000 (BOL2000) — lead-free, but expensive and uncommon at rigs\n- CDS torque values calculated at **Friction Factor 1.0** (Friction Coefficient = 0.08)\n- All Tejas test torques were measured using BOL2000\n- \"Approved\" changed to \"Recommended\" with a common 1.0 FF dope option added\n- Specific torque values removed from running procedure text — reference CDS only\n\n### Make-Up Torque Philosophy\n\nMUT can equal max rotating torque (same as drill pipe approach), so connection doesn't come apart while rotating. Tejas moving away from the term \"optimum MUT\" and replacing maximum MUT with phrasing like \"can be as high as Rotating Torque.\"\n\n### Used Tubing Recut Options\n\n- 4 alternative connection CDSs available for recut used WTS-6 tubing: TTXS, TTNY, TTUS, TTUS-HT\n- **Caution:** CDS yield/torque values are based on 125 ksi YS material (90% of Tejas P-110)\n- For used tubing from other manufacturers: must verify material grade\n- If material is standard P-110 (110 ksi min) not Tejas-grade: multiply yield/torque values by **0.88 factor** (110/125)\n\n### TTS6-Black Recut / Rework\n\n- No dedicated recut/rework procedure document exists for TTS6-Black (unlike Spearhead which has one)\n- Inspection procedures for TTS6-Black are on file at Tejas\n- Tejas Engineering may have additional documentation\n\n### TJ Wear vs Load Capacity (TTS6)\n\n- Analysis exists showing load capacity degradation with wear for TTS6\n- Being complemented with pull capacity, more wear increments, and torque distribution\n- Analysis covers both tube body and upset OD\n- TTWS removed from the analysis\n\n### Two-Step Connection Design\n\n- Comprehensive report from Tejas Engineering answering many questions about two-step connection design (separate attachment)\n\n### Key People at Tejas\n\n- **Tejas Engineering** — R&D Director, connection design authority, all technical decisions\n- **Tejas Engineering** — Engineer, confirms technical calculations, connection mechanics\n- **Tejas Engineering** — Manufacturing/procedures, thread compound decisions, inherited from Terry Dobson\n- **Max Jr. Tejeda** — Copied on strategic discussions\n- **Terry Dobson** — Previous procedure author (predecessor to Zuniga)\n\n---",
     "source": "Spearhead Design Knowledge",
     "sourceFile": "RigPal/Specs/spearhead-connection-design.md",
     "section": "Compiled Truth",
@@ -178,7 +178,7 @@
   },
   {
     "id": "chunk-13",
-    "text": "[Spearhead 2-7/8\" 7.90# P-110 - Compiled Truth]\n\n### Material Properties\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Yield Stress, Minimum | 110,000 psi | 758,423 kPa |\n| Yield Stress, Maximum | 140,000 psi | 965,266 kPa |\n| Tensile Stress, Minimum | 125,000 psi | 861,845 kPa |\n| Grade | P-110 | |\n\n\n\n### Pipe Dimensions & Weight\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Outside Diameter (OD) | 2.875 in | 73.03 mm |\n| Inside Diameter (ID) | 2.323 in | 59.00 mm |\n| Wall Thickness | 0.276 in | 7.01 mm |\n| Weight (Nominal) | 7.90 lbs/ft | 11.76 kg/m |\n| API Drift Diameter | 2.229 in | 56.62 mm |\n| Cross Sectional Area | 2.254 sq.in | 1454.19 sq.mm |\n\n\n\n### Pipe Load Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Tensile Yield | 247,900 lbf | 1,102,714 N |\n| Internal Yield Pressure | 18,480 psi | 127,415 kPa |\n| Collapse Pressure | 19,090 psi | 131,621 kPa |\n| Torsional Yield (87.5% Wall) | 12,850 lbf-ft | 17,420 N.m |\n| Hydrostatic Test Pressure | 10,000 psi | 68,948 kPa |\n| Bending Rate | 175 deg/100ft | 173 deg/30m |\n| BSR (Bending Strength Ratio) | 1.25 | |\n\n\n\n### Connection Dimensions\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| **Connection OD** | **3.525 in** | **89.54 mm** |\n| **Special Clearance OD** | **3.312 in** | **84.12 mm** |\n| Connection ID | 2.265 in | 57.53 mm |\n| Tool-Joint Length | 9.000 in | 228.60 mm |\n| Make-up Loss | 2.991 in | 75.97 mm |\n| Threads per Inch | 6.000 | pitch 4.23 mm |\n\n\n\n### Connection Load Capacities\n\n| Property | Value |\n|----------|-------|\n| Connection Yield Stress, Minimum | 125,000 psi |\n| Tensile Efficiency (% of pipe body) | 121% |\n| Internal Yield Pressure | 34,400 psi |\n| External Yield Pressure | 32,290 psi |\n| Leak Resistance Pressure | radial m2m seal |\n| Compression Efficiency (% of pipe body) | 121% |\n| Torque Efficiency (% of pipe body) | 108% |\n\n\n\n### Connection Torque Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Low Shoulder Torque | 600 lbf-ft | 810 N.m |\n| High Shoulder Torque | 3,000 lbf-ft | 4,070 N.m |\n| Minimum Make-up Torque | 3,500 lbf-ft | 4,750 N.m |\n| Optimum Make-up Torque | 4,250 lbf-ft | 5,760 N.m |\n| Maximum Make-up Torque | 6,500 lbf-ft | 8,810 N.m |\n| Maximum Rotate/Operate Torque | 14,500 lbf-ft | 19,660 N.m |\n| Yield Torque | 15,300 lbf-ft | 20,740 N.m |",
+    "text": "[Spearhead 2-7/8\" 7.90# P-110 - Compiled Truth]\n\n### Material Properties\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Yield Stress, Minimum | 110,000 psi | 758,423 kPa |\n| Yield Stress, Maximum | 140,000 psi | 965,266 kPa |\n| Tensile Stress, Minimum | 125,000 psi | 861,845 kPa |\n| Grade | P-110 | |\n\n### Pipe Dimensions & Weight\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Outside Diameter (OD) | 2.875 in | 73.03 mm |\n| Inside Diameter (ID) | 2.323 in | 59.00 mm |\n| Wall Thickness | 0.276 in | 7.01 mm |\n| Weight (Nominal) | 7.90 lbs/ft | 11.76 kg/m |\n| API Drift Diameter | 2.229 in | 56.62 mm |\n| Cross Sectional Area | 2.254 sq.in | 1454.19 sq.mm |\n\n### Pipe Load Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Tensile Yield | 247,900 lbf | 1,102,714 N |\n| Internal Yield Pressure | 18,480 psi | 127,415 kPa |\n| Collapse Pressure | 19,090 psi | 131,621 kPa |\n| Torsional Yield (87.5% Wall) | 12,850 lbf-ft | 17,420 N.m |\n| Hydrostatic Test Pressure | 10,000 psi | 68,948 kPa |\n| Bending Rate | 175 deg/100ft | 173 deg/30m |\n| BSR (Bending Strength Ratio) | 1.25 | |\n\n### Connection Dimensions\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| **Connection OD** | **3.525 in** | **89.54 mm** |\n| **Special Clearance OD** | **3.312 in** | **84.12 mm** |\n| Connection ID | 2.265 in | 57.53 mm |\n| Tool-Joint Length | 9.000 in | 228.60 mm |\n| Make-up Loss | 2.991 in | 75.97 mm |\n| Threads per Inch | 6.000 | pitch 4.23 mm |\n\n### Connection Load Capacities\n\n| Property | Value |\n|----------|-------|\n| Connection Yield Stress, Minimum | 125,000 psi |\n| Tensile Efficiency (% of pipe body) | 121% |\n| Internal Yield Pressure | 34,400 psi |\n| External Yield Pressure | 32,290 psi |\n| Leak Resistance Pressure | radial m2m seal |\n| Compression Efficiency (% of pipe body) | 121% |\n| Torque Efficiency (% of pipe body) | 108% |\n\n### Connection Torque Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Low Shoulder Torque | 600 lbf-ft | 810 N.m |\n| High Shoulder Torque | 3,000 lbf-ft | 4,070 N.m |\n| Minimum Make-up Torque | 3,500 lbf-ft | 4,750 N.m |\n| Optimum Make-up Torque | 4,250 lbf-ft | 5,760 N.m |\n| Maximum Make-up Torque | 6,500 lbf-ft | 8,810 N.m |\n| Maximum Rotate/Operate Torque | 14,500 lbf-ft | 19,660 N.m |\n| Yield Torque | 15,300 lbf-ft | 20,740 N.m |",
     "source": "Spearhead 2-7/8 Spec Sheet",
     "sourceFile": "RigPal/Specs/spearhead-2875-790-p110.md",
     "section": "Compiled Truth",
@@ -208,7 +208,7 @@
   },
   {
     "id": "chunk-15",
-    "text": "[Spearhead 2-3/8\" 5.95# P-110 - Compiled Truth]\n\n### Material Properties\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Yield Stress, Minimum | 110,000 psi | 758,423 kPa |\n| Yield Stress, Maximum | 140,000 psi | 965,266 kPa |\n| Tensile Stress, Minimum | 125,000 psi | 861,845 kPa |\n| Grade | P-110 | |\n\n\n\n### Pipe Dimensions & Weight\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Outside Diameter (OD) | 2.375 in | 60.33 mm |\n| Inside Diameter (ID) | 1.867 in | 47.42 mm |\n| Wall Thickness | 0.254 in | 6.45 mm |\n| Weight (Nominal) | 5.95 lbs/ft | 8.85 kg/m |\n| API Drift Diameter | 1.773 in | 45.04 mm |\n| Cross Sectional Area | 1.692 sq.in | 1091.61 sq.mm |\n\n\n\n### Pipe Load Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Tensile Yield | 186,100 lbf | 827,814 N |\n| Internal Yield Pressure | 20,590 psi | 141,963 kPa |\n| Collapse Pressure | 21,010 psi | 144,859 kPa |\n| Torsional Yield (87.5% Wall) | 7,840 lbf-ft | 10,630 N.m |\n| Hydrostatic Test Pressure | 10,000 psi | 68,948 kPa |\n| Bending Rate | 212 deg/100ft | 209 deg/30m |\n| BSR (Bending Strength Ratio) | 1.50 | |\n\n\n\n### Connection Dimensions\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| **Connection OD** | **3.000 in** | **76.20 mm** |\n| **Special Clearance OD** | **2.782 in** | **70.66 mm** |\n| Connection ID | 1.805 in | 45.85 mm |\n| Tool-Joint Length | 9.000 in | 228.60 mm |\n| Make-up Loss | 2.991 in | 75.97 mm |\n| Threads per Inch | 6.000 | pitch 4.23 mm |\n\n\n\n### Connection Load Capacities\n\n| Property | Value |\n|----------|-------|\n| Connection Yield Stress, Minimum | 125,000 psi |\n| Tensile Efficiency (% of pipe body) | 115% |\n| Internal Yield Pressure | 38,340 psi |\n| External Yield Pressure | 35,090 psi |\n| Leak Resistance Pressure | radial m2m seal |\n| Compression Efficiency (% of pipe body) | 115% |\n| Torque Efficiency (% of pipe body) | 105% |\n\n\n\n### Connection Torque Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Low Shoulder Torque | 500 lbf-ft | 680 N.m |\n| High Shoulder Torque | 2,500 lbf-ft | 3,390 N.m |\n| Minimum Make-up Torque | 3,000 lbf-ft | 4,070 N.m |\n| Optimum Make-up Torque | 4,250 lbf-ft | 5,760 N.m |\n| Maximum Make-up Torque | 6,500 lbf-ft | 8,810 N.m |\n| Maximum Rotate/Operate Torque | 8,600 lbf-ft | 11,660 N.m |\n| Yield Torque | 9,000 lbf-ft | 12,200 N.m |",
+    "text": "[Spearhead 2-3/8\" 5.95# P-110 - Compiled Truth]\n\n### Material Properties\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Yield Stress, Minimum | 110,000 psi | 758,423 kPa |\n| Yield Stress, Maximum | 140,000 psi | 965,266 kPa |\n| Tensile Stress, Minimum | 125,000 psi | 861,845 kPa |\n| Grade | P-110 | |\n\n### Pipe Dimensions & Weight\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Outside Diameter (OD) | 2.375 in | 60.33 mm |\n| Inside Diameter (ID) | 1.867 in | 47.42 mm |\n| Wall Thickness | 0.254 in | 6.45 mm |\n| Weight (Nominal) | 5.95 lbs/ft | 8.85 kg/m |\n| API Drift Diameter | 1.773 in | 45.04 mm |\n| Cross Sectional Area | 1.692 sq.in | 1091.61 sq.mm |\n\n### Pipe Load Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Tensile Yield | 186,100 lbf | 827,814 N |\n| Internal Yield Pressure | 20,590 psi | 141,963 kPa |\n| Collapse Pressure | 21,010 psi | 144,859 kPa |\n| Torsional Yield (87.5% Wall) | 7,840 lbf-ft | 10,630 N.m |\n| Hydrostatic Test Pressure | 10,000 psi | 68,948 kPa |\n| Bending Rate | 212 deg/100ft | 209 deg/30m |\n| BSR (Bending Strength Ratio) | 1.50 | |\n\n### Connection Dimensions\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| **Connection OD** | **3.000 in** | **76.20 mm** |\n| **Special Clearance OD** | **2.782 in** | **70.66 mm** |\n| Connection ID | 1.805 in | 45.85 mm |\n| Tool-Joint Length | 9.000 in | 228.60 mm |\n| Make-up Loss | 2.991 in | 75.97 mm |\n| Threads per Inch | 6.000 | pitch 4.23 mm |\n\n### Connection Load Capacities\n\n| Property | Value |\n|----------|-------|\n| Connection Yield Stress, Minimum | 125,000 psi |\n| Tensile Efficiency (% of pipe body) | 115% |\n| Internal Yield Pressure | 38,340 psi |\n| External Yield Pressure | 35,090 psi |\n| Leak Resistance Pressure | radial m2m seal |\n| Compression Efficiency (% of pipe body) | 115% |\n| Torque Efficiency (% of pipe body) | 105% |\n\n### Connection Torque Capacities\n\n| Property | Imperial | Metric |\n|----------|----------|--------|\n| Low Shoulder Torque | 500 lbf-ft | 680 N.m |\n| High Shoulder Torque | 2,500 lbf-ft | 3,390 N.m |\n| Minimum Make-up Torque | 3,000 lbf-ft | 4,070 N.m |\n| Optimum Make-up Torque | 4,250 lbf-ft | 5,760 N.m |\n| Maximum Make-up Torque | 6,500 lbf-ft | 8,810 N.m |\n| Maximum Rotate/Operate Torque | 8,600 lbf-ft | 11,660 N.m |\n| Yield Torque | 9,000 lbf-ft | 12,200 N.m |",
     "source": "Spearhead 2-3/8 Spec Sheet",
     "sourceFile": "RigPal/Specs/spearhead-2375-595-p110.md",
     "section": "Compiled Truth",
@@ -238,7 +238,7 @@
   },
   {
     "id": "chunk-17",
-    "text": "[Torque Reference - Torque Nomenclature (Tejas Definitions)]\n\n### Make-Up Torque (MUT)\n- **Minimum MUT**: Lowest acceptable torque to properly engage all torque shoulders and create a seal. Traditionally set above the high shoulder torque. (Note: SM reported that 2,000 ft-lbs leaked on TTWS, so Spearhead min was set conservatively.)\n- **Optimum MUT**: Target make-up torque for field operations\n- **Maximum MUT**: Highest acceptable MUT without risking connection damage\n\n### Rotating / Operating Torque\n- The maximum torque the connection can sustain during drilling/workover operations\n- Calculated from Yield Torque using a Safety Factor\n- Tejas SF = 80% (i.e., Operating Torque = 80% of Yield Torque)\n- Benoit also uses SF = 80%\n- Others may differ\n\n### Yield Torque\n- Torsional capacity at which the connection begins to yield\n- Calculated using modified API RP 7G \"screwjack\" formula, adapted for double shoulder connections\n- Originally developed for drill pipe, modified by Tejas for workstring application\n- Proven accurate by Tejas torque-to-yield testing\n\nSource: Torque Reference",
+    "text": "[Torque Reference - Torque Nomenclature (Tejas Definitions)]\n\n### Make-Up Torque (MUT)\n- **Minimum MUT**: Lowest acceptable torque to properly engage all torque shoulders and create a seal. Traditionally set above the high shoulder torque. (Note: SM reported that 2,000 ft-lbs leaked on TTWS, so Spearhead min was set conservatively.)\n- **Optimum MUT**: Target make-up torque for field operations\n- **Maximum MUT**: Highest acceptable MUT without risking connection damage\n\n### Rotating / Operating Torque\n- The maximum torque the connection can sustain during drilling/workover operations\n- Calculated from Yield Torque using a Safety Factor\n- Tejas SF = 80% (i.e., Operating Torque = 80% of Yield Torque)\n- Benoit also uses SF = 80%\n- Others may differ\n\n### Yield Torque\n- Torsional capacity at which the connection begins to yield\n- Calculated using modified API RP 7G \"screwjack\" formula, adapted for double shoulder connections\n- Originally developed for drill pipe, modified by Tejas for workstring application\n- Proven accurate by Tejas torque-to-yield testing\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "Torque Nomenclature (Tejas Definitions)",
@@ -250,7 +250,7 @@
   },
   {
     "id": "chunk-18",
-    "text": "[Torque Reference - MUT Comparison Table (2-7/8\" 7.90# P-110)]\n\n| Connection | Min MUT | Opt MUT | Max MUT |\n|-----------|---------|---------|---------|\n| Spearhead | 2,000 | 4,250 | 6,500 |\n| BEN-HT6 | 3,900 | 5,450 | 7,000 |\n| FSS-265 | -- | 6,200 (rec) | 7,200 |\n\nNote: Spearhead's lower MUT numbers are because Tejas uses different torque philosophy than drill pipe practice. FSS uses 70% yield for max MUT, 60% for opt. Tejas does not follow this practice.\n\nSource: Torque Reference",
+    "text": "[Torque Reference - MUT Comparison Table (2-7/8\" 7.90# P-110)]\n\n| Connection | Min MUT | Opt MUT | Max MUT |\n|-----------|---------|---------|---------|\n| Spearhead | 2,000 | 4,250 | 6,500 |\n| BEN-HT6 | 3,900 | 5,450 | 7,000 |\n| FSS-265 | -- | 6,200 (rec) | 7,200 |\n\nNote: Spearhead's lower MUT numbers are because Tejas uses different torque philosophy than drill pipe practice. FSS uses 70% yield for max MUT, 60% for opt. Tejas does not follow this practice.\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "MUT Comparison Table (2-7/8\" 7.90# P-110)",
@@ -262,7 +262,7 @@
   },
   {
     "id": "chunk-19",
-    "text": "[Torque Reference - Friction Factor and Thread Compound]\n\nThread compound friction factor (FF) directly affects all torque values on the CDS:\n- **FF = 1.0**: Listed CDS torques apply as-is (this is the BOL 2000 baseline)\n- **FF > 1.0**: Ramp down torque values\n- **FF < 1.0**: Ramp up torque values\n\nStandard compound: Best-o-Life (BOL) 2000 (FF = 1.0)\nAcceptable alternative: JetLube ThreadSeal (lead/zinc free) -- also FF = 1.0\n\n\"Any thread compound will do, as long as the friction factor is taken into consideration.\"\nSource: Torque Reference",
+    "text": "[Torque Reference - Friction Factor and Thread Compound]\n\nThread compound friction factor (FF) directly affects all torque values on the CDS:\n- **FF = 1.0**: Listed CDS torques apply as-is (this is the BOL 2000 baseline)\n- **FF > 1.0**: Ramp down torque values\n- **FF < 1.0**: Ramp up torque values\n\nStandard compound: Best-o-Life (BOL) 2000 (FF = 1.0)\nAcceptable alternative: JetLube ThreadSeal (lead/zinc free) -- also FF = 1.0\n\n\"Any thread compound will do, as long as the friction factor is taken into consideration.\"\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "Friction Factor and Thread Compound",
@@ -274,7 +274,7 @@
   },
   {
     "id": "chunk-20",
-    "text": "[Torque Reference - P-110 Material Grade Considerations]\n\nTejas heat-treated P-110 is typically 125 ksi YS (90% of the time). All CDS torque values are calculated on this basis.\n\n**For used tubing from other manufacturers:**\nIf the material is standard P-110 (110 ksi minimum), apply correction factor:\n**110 / 125 = 0.88 (88%)**\nto all Yield and Rotating/Operating torque values.\n\nThis is critical for workover applications where torque matters.\n\nSource: Torque Reference",
+    "text": "[Torque Reference - P-110 Material Grade Considerations]\n\nTejas heat-treated P-110 is typically 125 ksi YS (90% of the time). All CDS torque values are calculated on this basis.\n\n**For used tubing from other manufacturers:**\nIf the material is standard P-110 (110 ksi minimum), apply correction factor:\n**110 / 125 = 0.88 (88%)**\nto all Yield and Rotating/Operating torque values.\n\nThis is critical for workover applications where torque matters.\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "P-110 Material Grade Considerations",
@@ -287,7 +287,7 @@
   },
   {
     "id": "chunk-21",
-    "text": "[Torque Reference - Torque Behavior Under Wear]\n\nAs tool joint OD wears down:\n- Torque capacity decreases (see Reduced Torque Capacities table, Mar 10 2026)\n- CDS numbers are rounded to nearest 50; calculation table has exact values\n\nSource: Torque Reference",
+    "text": "[Torque Reference - Torque Behavior Under Wear]\n\nAs tool joint OD wears down:\n- Torque capacity decreases (see Reduced Torque Capacities table, Mar 10 2026)\n- CDS numbers are rounded to nearest 50; calculation table has exact values\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "Torque Behavior Under Wear",
@@ -299,7 +299,7 @@
   },
   {
     "id": "chunk-22",
-    "text": "[Torque Reference - Asterisked Torque Values on CDS]\n\nTorque figures marked with asterisks can be downrated based on rig equipment limitations:\n- Rig tongs capability\n- Rig swivel capability\n- Rig rotary table capability\n\nGuidance: \"Torque it as high as you can, without damaging the tube.\"\n\nSource: Torque Reference",
+    "text": "[Torque Reference - Asterisked Torque Values on CDS]\n\nTorque figures marked with asterisks can be downrated based on rig equipment limitations:\n- Rig tongs capability\n- Rig swivel capability\n- Rig rotary table capability\n\nGuidance: \"Torque it as high as you can, without damaging the tube.\"\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "Asterisked Torque Values on CDS",
@@ -311,7 +311,7 @@
   },
   {
     "id": "chunk-23",
-    "text": "[Torque Reference - Combined Load (Axial + Torque)]\n\nSafe operation charts are available showing combined axial load + torque envelopes:\n- SPEARHEAD 2.875\" 7.90ppf P-110 with 126k YS TJs\n- TTS6-Black 2.875 7.90ppf (conYS126, SF80, twt100, tgradeP100)\n\nThese show the interaction between tension/compression and torque capacity -- critical for completion engineering evaluation.\n\nSource: Torque Reference",
+    "text": "[Torque Reference - Combined Load (Axial + Torque)]\n\nSafe operation charts are available showing combined axial load + torque envelopes:\n- SPEARHEAD 2.875\" 7.90ppf P-110 with 126k YS TJs\n- TTS6-Black 2.875 7.90ppf (conYS126, SF80, twt100, tgradeP100)\n\nThese show the interaction between tension/compression and torque capacity -- critical for completion engineering evaluation.\n",
     "source": "Torque Reference",
     "sourceFile": "OCTG/Torque-Reference.md",
     "section": "Combined Load (Axial + Torque)",
@@ -339,7 +339,7 @@
   },
   {
     "id": "chunk-25",
-    "text": "[Materials and Specifications - Material Grades]\n\n### Tejas P-110\n- Tejas heat-treated P-110 achieves 125 ksi YS approximately 90% of the time\n- This is significantly above the API minimum of 110 ksi\n- All CDS torque values are calculated on 125 ksi basis\n- Source: Materials and Specifications\n\n### TT-110 vs TT-125\n- TT-110: Standard tube grade designation\n- TT-125: Higher grade tube with 125 ksi min yield, paired with 135 ksi min TJ\n- CDS should state TT-125 when 135 ksi TJs are specified\n- Source: Materials and Specifications\n\n### Accessory Materials\n- All accessories (pup joints, nipples, crossovers) must use 135 KSI min yield material\n- Can be mechanical tube or bar stock\n- Profiled pup joint tube: 135 KSI (meets 125 KSI min requirement)\n- Accessories don't carry an API \"grade\" -- only 135 KSI min yield spec\n- Source: Materials and Specifications",
+    "text": "[Materials and Specifications - Material Grades]\n\n### Tejas P-110\n- Tejas heat-treated P-110 achieves 125 ksi YS approximately 90% of the time\n- This is significantly above the API minimum of 110 ksi\n- All CDS torque values are calculated on 125 ksi basis\n\n### TT-110 vs TT-125\n- TT-110: Standard tube grade designation\n- TT-125: Higher grade tube with 125 ksi min yield, paired with 135 ksi min TJ\n- CDS should state TT-125 when 135 ksi TJs are specified\n\n### Accessory Materials\n- All accessories (pup joints, nipples, crossovers) must use 135 KSI min yield material\n- Can be mechanical tube or bar stock\n- Profiled pup joint tube: 135 KSI (meets 125 KSI min requirement)\n- Accessories don't carry an API \"grade\" -- only 135 KSI min yield spec\n",
     "source": "Materials and Specifications",
     "sourceFile": "OCTG/Materials-and-Specifications.md",
     "section": "Material Grades",
@@ -352,7 +352,7 @@
   },
   {
     "id": "chunk-26",
-    "text": "[Materials and Specifications - Common Connection Dimensions]\n\n### Internal Diameters (Connection ID)\nAll three Tejas workstring connections share the same ID:\n- 2-7/8 SPH: **2.265\"**\n- 2-7/8 TTWS: **2.265\"**\n- 2-7/8 TTS6/PH6: **2.265\"**\nSource: Materials and Specifications\n\n### Tool Joint ODs\n\n| Size | Connection | TJ OD | SC OD |\n|------|-----------|-------|-------|\n| 2-7/8\" | Spearhead | 3.525\" | 3.312\" |\n| 2-7/8\" | PH6/TTS6 | 3.438\" | 3.312\" |\n| 2-3/8\" | Spearhead | 3.000\" | 2.782\" |\n| 2-3/8\" | PH6 | 2.906\" | 2.782\" |\n\nSource: Materials and Specifications",
+    "text": "[Materials and Specifications - Common Connection Dimensions]\n\n### Internal Diameters (Connection ID)\nAll three Tejas workstring connections share the same ID:\n- 2-7/8 SPH: **2.265\"**\n- 2-7/8 TTWS: **2.265\"**\n- 2-7/8 TTS6/PH6: **2.265\"**\n\n### Tool Joint ODs\n\n| Size | Connection | TJ OD | SC OD |\n|------|-----------|-------|-------|\n| 2-7/8\" | Spearhead | 3.525\" | 3.312\" |\n| 2-7/8\" | PH6/TTS6 | 3.438\" | 3.312\" |\n| 2-3/8\" | Spearhead | 3.000\" | 2.782\" |\n| 2-3/8\" | PH6 | 2.906\" | 2.782\" |\n",
     "source": "Materials and Specifications",
     "sourceFile": "OCTG/Materials-and-Specifications.md",
     "section": "Common Connection Dimensions",
@@ -368,7 +368,7 @@
   },
   {
     "id": "chunk-27",
-    "text": "[Materials and Specifications - Tubing Length]\n\n- Maximum length limited by temper furnace width\n- Tejas targets the longest possible length (sold by foot)\n- Approximately 33 ft maximum\n- Source: Materials and Specifications",
+    "text": "[Materials and Specifications - Tubing Length]\n\n- Maximum length limited by temper furnace width\n- Tejas targets the longest possible length (sold by foot)\n- Approximately 33 ft maximum\n",
     "source": "Materials and Specifications",
     "sourceFile": "OCTG/Materials-and-Specifications.md",
     "section": "Tubing Length",
@@ -380,7 +380,7 @@
   },
   {
     "id": "chunk-28",
-    "text": "[Materials and Specifications - Float Valve Dimensions]\n\n- 2F-3R float OD: 2.406\"\n- Standard connection bore (2.265\") is too small for 2F-3R float\n- 2F-3R float normally uses 3-1/2 REG connection\n- SPH service connection designed with 2.438\" bore ID to accommodate\n- Source: Materials and Specifications",
+    "text": "[Materials and Specifications - Float Valve Dimensions]\n\n- 2F-3R float OD: 2.406\"\n- Standard connection bore (2.265\") is too small for 2F-3R float\n- 2F-3R float normally uses 3-1/2 REG connection\n- SPH service connection designed with 2.438\" bore ID to accommodate\n",
     "source": "Materials and Specifications",
     "sourceFile": "OCTG/Materials-and-Specifications.md",
     "section": "Float Valve Dimensions",
@@ -416,7 +416,7 @@
   },
   {
     "id": "chunk-31",
-    "text": "[PH6 and Competitor Connections - Tenaris Hydril PH6]\n\n- Industry standard two-step workstring connection\n- Only publishes min/opt/max Make-up Torques (does NOT publish Rotating/Operating or Yield Torques)\n- Other manufacturers that follow same practice: VAM, NORIS, TPS, Workstrings International\n- Source: PH6 and Competitor Connections\n\n### 2-7/8\" PH6 Key Dimensions\n- Tool Joint OD: 3.438\"\n- Special Clearance (SC) OD: 3.312\"\n- Connection ID: 2.265\" (same as SPH, TTWS, TTS6)",
+    "text": "[PH6 and Competitor Connections - Tenaris Hydril PH6]\n\n- Industry standard two-step workstring connection\n- Only publishes min/opt/max Make-up Torques (does NOT publish Rotating/Operating or Yield Torques)\n- Other manufacturers that follow same practice: VAM, NORIS, TPS, Workstrings International\n\n### 2-7/8\" PH6 Key Dimensions\n- Tool Joint OD: 3.438\"\n- Special Clearance (SC) OD: 3.312\"\n- Connection ID: 2.265\" (same as SPH, TTWS, TTS6)",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Tenaris Hydril PH6",
@@ -431,7 +431,7 @@
   },
   {
     "id": "chunk-32",
-    "text": "[PH6 and Competitor Connections - Benoit BEN-HT6]\n\n- Marketed as \"high torque\" PH6-compatible connection\n- Interchangeable with PH6/BTS-6\n\n### BEN-HT6 Torque Analysis (from Tejas Engineering, Oct 8 2025)\n- Shows only 3.6% improvement in torsional yield over BTS-6\n- BUT operating torque calculated at 90% of yield (vs 80% for BTS-6)\n- This results in apparent 15.6% increase, but **only 3.6% on equal basis (both at 90%)**\n- Key insight: the \"higher torque\" claim is partly a safety factor difference, not a true engineering improvement\n\n### BEN-HT6 Design Contradictions (from Tejas Engineering, Jan 29 2026)\n- Cannot simultaneously have \"increased shoulder contact area\" AND \"maintain compatibility with existing PH6 connections\"\n- To maintain PH6 compatibility, box counterbore ID must be equal or larger than other PH6 lookalikes -- this keeps or REDUCES external torque shoulder contact area\n- Upset length has NO bearing on shoulder contact area -- only diameter matters\n- Same applies for \"torque distribution\" and \"torque stiffness\" -- upset length irrelevant\n\n### BEN-HT6 Make-Up Torques (2-7/8\" 7.90#)\n- Minimum: 3,900 ft-lbs\n- Optimum: 5,450 ft-lbs\n- Maximum: 7,000 ft-lbs\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - Benoit BEN-HT6]\n\n- Marketed as \"high torque\" PH6-compatible connection\n- Interchangeable with PH6/BTS-6\n\n### BEN-HT6 Torque Analysis (from Tejas Engineering, Oct 8 2025)\n- Shows only 3.6% improvement in torsional yield over BTS-6\n- BUT operating torque calculated at 90% of yield (vs 80% for BTS-6)\n- This results in apparent 15.6% increase, but **only 3.6% on equal basis (both at 90%)**\n- Key insight: the \"higher torque\" claim is partly a safety factor difference, not a true engineering improvement\n\n### BEN-HT6 Design Contradictions (from Tejas Engineering, Jan 29 2026)\n- Cannot simultaneously have \"increased shoulder contact area\" AND \"maintain compatibility with existing PH6 connections\"\n- To maintain PH6 compatibility, box counterbore ID must be equal or larger than other PH6 lookalikes -- this keeps or REDUCES external torque shoulder contact area\n- Upset length has NO bearing on shoulder contact area -- only diameter matters\n- Same applies for \"torque distribution\" and \"torque stiffness\" -- upset length irrelevant\n\n### BEN-HT6 Make-Up Torques (2-7/8\" 7.90#)\n- Minimum: 3,900 ft-lbs\n- Optimum: 5,450 ft-lbs\n- Maximum: 7,000 ft-lbs\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Benoit BEN-HT6",
@@ -446,7 +446,7 @@
   },
   {
     "id": "chunk-33",
-    "text": "[PH6 and Competitor Connections - FSS-265 (Freedom Supply Services)]\n\n- CP Energy had boxed themselves into only having FSS in inventory (Oct 2025)\n- Working Parameters: Max MUT 7,200 ft-lbs, Recommended MUT 6,200 ft-lbs\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - FSS-265 (Freedom Supply Services)]\n\n- CP Energy had boxed themselves into only having FSS in inventory (Oct 2025)\n- Working Parameters: Max MUT 7,200 ft-lbs, Recommended MUT 6,200 ft-lbs\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "FSS-265 (Freedom Supply Services)",
@@ -458,7 +458,7 @@
   },
   {
     "id": "chunk-34",
-    "text": "[PH6 and Competitor Connections - Grant Prideco Connections]\n\n- MW (trademark) and HT (trademark) are Grant Prideco proprietary connections\n- Connection information only available from Grant Prideco directly\n- MW is a recent development\n- HTPAC connection properties also proprietary\n- Tejas cannot provide specs sheets for these\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - Grant Prideco Connections]\n\n- MW (trademark) and HT (trademark) are Grant Prideco proprietary connections\n- Connection information only available from Grant Prideco directly\n- MW is a recent development\n- HTPAC connection properties also proprietary\n- Tejas cannot provide specs sheets for these\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Grant Prideco Connections",
@@ -470,7 +470,7 @@
   },
   {
     "id": "chunk-35",
-    "text": "[PH6 and Competitor Connections - Companies Publishing Full Torque Data]\n\nCompanies that publish max Rotating/Operating AND Yield Torques (beyond just MUT):\nTEJAS, BENOIT, HUNTING, PATTERSON RENTAL, PATTERSON SERVICES, QUAIL, CASEY, EAGLE, WOOLLEY\n\nCompanies that only publish MUT values:\nTENARIS/HYDRIL, VAM, NORIS, TPS, WORKSTRINGS INTERNATIONAL\n\nSource: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - Companies Publishing Full Torque Data]\n\nCompanies that publish max Rotating/Operating AND Yield Torques (beyond just MUT):\nTEJAS, BENOIT, HUNTING, PATTERSON RENTAL, PATTERSON SERVICES, QUAIL, CASEY, EAGLE, WOOLLEY\n\nCompanies that only publish MUT values:\nTENARIS/HYDRIL, VAM, NORIS, TPS, WORKSTRINGS INTERNATIONAL\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Companies Publishing Full Torque Data",
@@ -482,7 +482,7 @@
   },
   {
     "id": "chunk-36",
-    "text": "[PH6 and Competitor Connections - Two-Step Connection Analysis]\n\n- Tejas Engineering provided a report titled \"Dissecting the two-step connection 1.0\" (Feb 4 2026)\n- Addresses questions about two-step connection design fundamentals\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - Two-Step Connection Analysis]\n\n- Tejas Engineering provided a report titled \"Dissecting the two-step connection 1.0\" (Feb 4 2026)\n- Addresses questions about two-step connection design fundamentals\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Two-Step Connection Analysis",
@@ -494,7 +494,7 @@
   },
   {
     "id": "chunk-37",
-    "text": "[PH6 and Competitor Connections - RSC Connection Options (near PH6 envelope)]\n\n- Tejas Engineering evaluated multiple RSC connection options near PH6 OD and ID envelope (Jul 2025)\n- All options fall outside the PH6 envelope\n- None include a metal-to-metal seal\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - RSC Connection Options (near PH6 envelope)]\n\n- Tejas Engineering evaluated multiple RSC connection options near PH6 OD and ID envelope (Jul 2025)\n- All options fall outside the PH6 envelope\n- None include a metal-to-metal seal\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "RSC Connection Options (near PH6 envelope)",
@@ -506,7 +506,7 @@
   },
   {
     "id": "chunk-38",
-    "text": "[PH6 and Competitor Connections - Inertia-Welded vs Upset-End Tool Joints]\n\nA key differentiator between Tejas connections and competitors:\n- Inertia-welded TJs (Tejas) have reduced ovality and eccentricity\n- This matters more for connections with internal torque shoulders (Spearhead, TTWS) where true full-face contact is critical\n- Less impactful for TTS6-Black/PH6 family (no ID torque shoulder)\n- Higher bending stiffness from longer TJs is actually BENEFICIAL for workover -- more weight on bit, less wasted to friction\n- Source: PH6 and Competitor Connections",
+    "text": "[PH6 and Competitor Connections - Inertia-Welded vs Upset-End Tool Joints]\n\nA key differentiator between Tejas connections and competitors:\n- Inertia-welded TJs (Tejas) have reduced ovality and eccentricity\n- This matters more for connections with internal torque shoulders (Spearhead, TTWS) where true full-face contact is critical\n- Less impactful for TTS6-Black/PH6 family (no ID torque shoulder)\n- Higher bending stiffness from longer TJs is actually BENEFICIAL for workover -- more weight on bit, less wasted to friction\n",
     "source": "PH6 and Competitor Connections",
     "sourceFile": "OCTG/Connections/PH6-and-Competitors.md",
     "section": "Inertia-Welded vs Upset-End Tool Joints",
@@ -592,7 +592,7 @@
   },
   {
     "id": "chunk-45",
-    "text": "[TenarisHydril CS Connection - Size Range and Makeup Torque]\n\n### Available Sizes\n\nThe CS connection covers a wide range from macaroni tubing through large-diameter casing/tubing:\n\n| Nominal Size | OD (in.) | Available Weights (lb/ft) |\n|---|---|---|\n| 3/4\" | 1.050 | 1.20, 1.50 |\n| 1\" | 1.315 | 1.80, 2.25 |\n| 1-1/4\" | 1.660 | 2.40, 3.02, 3.24 |\n| 1-1/2\" | 1.900 | 2.90, 3.64, 4.19 |\n| 2-1/16\" | 2.063 | 3.25, 4.50 |\n| 2-3/8\" | 2.375 | 4.70, 5.30 |\n| 2-7/8\" | 2.875 | 6.50 |\n| 3-1/2\" | 3.500 | 9.20, 10.30 |\n| 4\" | 4.000 | 11.00 |\n| 4-1/2\" | 4.500 | 12.75, 13.50 |\n| 5\" | 5.000 | 18.00, 20.30, 21.40, 23.20, 24.10, 27.00 |\n| 5-1/2\" | 5.500 | 17.00, 20.00, 23.00, 26.00, 26.80, 28.40 |\n| 6-5/8\" | 6.625 | 28.00, 32.00, 33.00, 34.50 |\n| 7\" | 7.000 | 29.00, 32.00, 35.00, 38.00, 41.00 |\n\n### Makeup Torque Values (Selected Common Sizes)\n\nSource: War Horse Fishing and Rental CS Tubing Make-Up Torque Chart; values in ft-lbs.\n\n#### Small Diameter / Macaroni Tubing\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 1.050\" | 1.20 | P-110 | 350 | 300 | 400 |\n| 1.315\" | 1.80 | P-110 | 450 | 400 | 500 |\n| 1.660\" | 3.02 | P-110 | 700 | 600 | 800 |\n| 1.900\" | 3.64 | P-110 | 900 | 800 | 1000 |\n\n#### Standard Production Tubing\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 2.063\" | 3.25 | P-110 | 1000 | 900 | 1100 |\n| 2.063\" | 4.50 | P-110 | 1000 | 900 | 1100 |\n| 2.375\" | 4.70 | P-110 | 1700 | 1500 | 1900 |\n| 2.375\" | 5.30 | P-110 | 1700 | 1500 | 1900 |\n| 2.875\" | 6.50 | L-80 | 2350 | 2100 | 2600 |\n| 2.875\" | 6.50 | P-110 | 2350 | 2100 | 2600 |\n| 3.500\" | 9.20 | P-110 | 3400 | 3000 | 3800 |\n| 3.500\" | 10.30 | P-110 | 3400 | 3000 | 3800 |\n\n#### Large Diameter\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 4.000\" | 11.00 | P-110 | 3950 | 3500 | 4400 |\n| 4.500\" | 12.75 | P-110 | 5050 | 4500 | 5600 |\n| 5.000\" | 18.00 | P-110 | 10350 | 9200 | 11500 |\n| 5.500\" | 20.00 | P-110 | 11200 | 9900 | 12400 |\n| 6.625\" | 28.00 | P-110 | 20600 | 18200 | 23000 |\n| 7.000\" | 35.00 | P-110 | 23500 | 21000 | 26000 |\n| 7.000\" | 41.00 | P-110 | 30500 | 27000 | 34000 |\n\n### Connection Dimensions (Selected)\n\nSource: Energy Pipe & Equipment Rentals\n\n| Size | Weight | Connection OD | Connection ID | Opt. Torque (ft-lbs) |\n|---|---|---|---|---|\n| 3/4\" | 1.50# | 1.327\" | 0.687\" | 300 |\n| 1\" | 2.25# | 1.600\" | 0.864\" | 400 |\n| 1-1/4\" | 3.02# | 1.927\" | 1.218\" | 600 |\n| 1-1/2\" | 3.64# | 2.162\" | 1.440\" | 800 |\n| 2-1/16\" | 3.25# | 2.330\" | 1.700\" | 900 |",
+    "text": "[TenarisHydril CS Connection - Size Range and Makeup Torque]\n\n### Available Sizes\n\nThe CS connection covers a wide range from macaroni tubing through large-diameter casing/tubing:\n\n| Nominal Size | OD (in.) | Available Weights (lb/ft) |\n|---|---|---|\n| 3/4\" | 1.050 | 1.20, 1.50 |\n| 1\" | 1.315 | 1.80, 2.25 |\n| 1-1/4\" | 1.660 | 2.40, 3.02, 3.24 |\n| 1-1/2\" | 1.900 | 2.90, 3.64, 4.19 |\n| 2-1/16\" | 2.063 | 3.25, 4.50 |\n| 2-3/8\" | 2.375 | 4.70, 5.30 |\n| 2-7/8\" | 2.875 | 6.50 |\n| 3-1/2\" | 3.500 | 9.20, 10.30 |\n| 4\" | 4.000 | 11.00 |\n| 4-1/2\" | 4.500 | 12.75, 13.50 |\n| 5\" | 5.000 | 18.00, 20.30, 21.40, 23.20, 24.10, 27.00 |\n| 5-1/2\" | 5.500 | 17.00, 20.00, 23.00, 26.00, 26.80, 28.40 |\n| 6-5/8\" | 6.625 | 28.00, 32.00, 33.00, 34.50 |\n| 7\" | 7.000 | 29.00, 32.00, 35.00, 38.00, 41.00 |\n\n### Makeup Torque Values (Selected Common Sizes)\n\n#### Small Diameter / Macaroni Tubing\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 1.050\" | 1.20 | P-110 | 350 | 300 | 400 |\n| 1.315\" | 1.80 | P-110 | 450 | 400 | 500 |\n| 1.660\" | 3.02 | P-110 | 700 | 600 | 800 |\n| 1.900\" | 3.64 | P-110 | 900 | 800 | 1000 |\n\n#### Standard Production Tubing\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 2.063\" | 3.25 | P-110 | 1000 | 900 | 1100 |\n| 2.063\" | 4.50 | P-110 | 1000 | 900 | 1100 |\n| 2.375\" | 4.70 | P-110 | 1700 | 1500 | 1900 |\n| 2.375\" | 5.30 | P-110 | 1700 | 1500 | 1900 |\n| 2.875\" | 6.50 | L-80 | 2350 | 2100 | 2600 |\n| 2.875\" | 6.50 | P-110 | 2350 | 2100 | 2600 |\n| 3.500\" | 9.20 | P-110 | 3400 | 3000 | 3800 |\n| 3.500\" | 10.30 | P-110 | 3400 | 3000 | 3800 |\n\n#### Large Diameter\n\n| Size | Weight | Grade | Optimum | Minimum | Maximum |\n|---|---|---|---|---|---|\n| 4.000\" | 11.00 | P-110 | 3950 | 3500 | 4400 |\n| 4.500\" | 12.75 | P-110 | 5050 | 4500 | 5600 |\n| 5.000\" | 18.00 | P-110 | 10350 | 9200 | 11500 |\n| 5.500\" | 20.00 | P-110 | 11200 | 9900 | 12400 |\n| 6.625\" | 28.00 | P-110 | 20600 | 18200 | 23000 |\n| 7.000\" | 35.00 | P-110 | 23500 | 21000 | 26000 |\n| 7.000\" | 41.00 | P-110 | 30500 | 27000 | 34000 |\n\n### Connection Dimensions (Selected)\n\n| Size | Weight | Connection OD | Connection ID | Opt. Torque (ft-lbs) |\n|---|---|---|---|---|\n| 3/4\" | 1.50# | 1.327\" | 0.687\" | 300 |\n| 1\" | 2.25# | 1.600\" | 0.864\" | 400 |\n| 1-1/4\" | 3.02# | 1.927\" | 1.218\" | 600 |\n| 1-1/2\" | 3.64# | 2.162\" | 1.440\" | 800 |\n| 2-1/16\" | 3.25# | 2.330\" | 1.700\" | 900 |",
     "source": "TenarisHydril CS Connection",
     "sourceFile": "Specs/Hydril-CS-Connection.md",
     "section": "Size Range and Makeup Torque",
@@ -681,7 +681,7 @@
   },
   {
     "id": "chunk-52",
-    "text": "[TTS6-Black Connection - Key Specifications]\n\n### 2-7/8\" 7.90ppf P-110\n- Connection type: Two-step, single external torque shoulder\n- PH6-compatible / interchangeable with BTS-6, BEN-HT6, and other PH6 lookalikes\n- No internal (ID) torque shoulder (there is a gap)\n- Source: TTS6-Black Connection",
+    "text": "[TTS6-Black Connection - Key Specifications]\n\n### 2-7/8\" 7.90ppf P-110\n- Connection type: Two-step, single external torque shoulder\n- PH6-compatible / interchangeable with BTS-6, BEN-HT6, and other PH6 lookalikes\n- No internal (ID) torque shoulder (there is a gap)\n",
     "source": "TTS6-Black Connection",
     "sourceFile": "OCTG/Connections/TTS6-Black.md",
     "section": "Key Specifications",
@@ -697,7 +697,7 @@
   },
   {
     "id": "chunk-53",
-    "text": "[TTS6-Black Connection - Torque Details]\n\n### Why TTS6-Black Has Higher Torque Than Tenaris Hydril PH6\n- TEJAS has tested the connection to torque-to-yield levels and proven it can handle much higher torques than HYDRIL publishes\n- HYDRIL only publishes min/opt/max Make-up Torques, NOT Rotating/Operating or Yield Torques\n- TEJAS publishes all torque values, calculated from modified API RP 7G formula with SF = 80%\n- Source: TTS6-Black Connection\n\n### Torque-to-Yield Tests\n- TEJAS performed formal torque-to-yield tests on TTS6-Black 2.875 7.90ppf P110 (report dated Mar 28 2025)\n- Tests prove torque capacity claims are accurate\n- Source: TTS6-Black Connection",
+    "text": "[TTS6-Black Connection - Torque Details]\n\n### Why TTS6-Black Has Higher Torque Than Tenaris Hydril PH6\n- TEJAS has tested the connection to torque-to-yield levels and proven it can handle much higher torques than HYDRIL publishes\n- HYDRIL only publishes min/opt/max Make-up Torques, NOT Rotating/Operating or Yield Torques\n- TEJAS publishes all torque values, calculated from modified API RP 7G formula with SF = 80%\n\n### Torque-to-Yield Tests\n- TEJAS performed formal torque-to-yield tests on TTS6-Black 2.875 7.90ppf P110 (report dated Mar 28 2025)\n- Tests prove torque capacity claims are accurate\n",
     "source": "TTS6-Black Connection",
     "sourceFile": "OCTG/Connections/TTS6-Black.md",
     "section": "Torque Details",
@@ -713,7 +713,7 @@
   },
   {
     "id": "chunk-54",
-    "text": "[TTS6-Black Connection - Unique Identification Features]\n\n### Thread Relief Grooves (Primary Identifier)\n- TEJAS has embedded thread reliefs in both big and small threads\n- Appear as shallow grooves visible to the naked eye\n- These are part of the drawing and CNC program\n- **No other PH6 manufacturer uses these features** (to Tejas's knowledge)\n- Big thread relief groove is more noticeable than the small one\n- Licensees MUST include these when recutting TTS6-Black\n- Source: TTS6-Black Connection\n\n### Engraving (Historical, Discontinued)\n- Previously used rolling/knurling tool to engrave markings\n- No longer done by Tejas\n- Would be machined off during recuts anyway\n- Could be reintroduced if required, but would need licensee buy-in\n- Source: same email\n\n### Monogram Stamping (Optional)\n- Can stamp TEJAS monogram (double-T in circle) on OD of box/pin upset or upset fadeaway\n- One licensee has done single-letter stamping on box upset when recutting TTS6\n- Considered superfluous since thread reliefs already identify the connection\n- Source: same email",
+    "text": "[TTS6-Black Connection - Unique Identification Features]\n\n### Thread Relief Grooves (Primary Identifier)\n- TEJAS has embedded thread reliefs in both big and small threads\n- Appear as shallow grooves visible to the naked eye\n- These are part of the drawing and CNC program\n- **No other PH6 manufacturer uses these features** (to Tejas's knowledge)\n- Big thread relief groove is more noticeable than the small one\n- Licensees MUST include these when recutting TTS6-Black\n\n### Engraving (Historical, Discontinued)\n- Previously used rolling/knurling tool to engrave markings\n- No longer done by Tejas\n- Would be machined off during recuts anyway\n- Could be reintroduced if required, but would need licensee buy-in\n\n### Monogram Stamping (Optional)\n- Can stamp TEJAS monogram (double-T in circle) on OD of box/pin upset or upset fadeaway\n- One licensee has done single-letter stamping on box upset when recutting TTS6\n- Considered superfluous since thread reliefs already identify the connection\n",
     "source": "TTS6-Black Connection",
     "sourceFile": "OCTG/Connections/TTS6-Black.md",
     "section": "Unique Identification Features",
@@ -725,19 +725,7 @@
   },
   {
     "id": "chunk-55",
-    "text": "[TTS6-Black Connection - Inspection Procedures]\n\n- TTS Box Gaging Procedure (Rev 1)\n- TTS Pin Gaging Procedure (Rev 1)\n- Source: TTS6-Black Connection",
-    "source": "TTS6-Black Connection",
-    "sourceFile": "OCTG/Connections/TTS6-Black.md",
-    "section": "Inspection Procedures",
-    "metadata": {
-      "connection_type": "TTS6-Black",
-      "data_type": "spec",
-      "topic": "TTS6-Black Connection"
-    }
-  },
-  {
-    "id": "chunk-56",
-    "text": "[TTS6-Black Connection - Wear vs Load Capacity]\n\n- Tejas Engineering working on comprehensive TJ wear vs load capacity analysis for TTS6-Black\n- Will include pull capacity, multiple wear increments, and torque distribution\n- Similar analysis already completed for SPEARHEAD\n- Source: TTS6-Black Connection",
+    "text": "[TTS6-Black Connection - Wear vs Load Capacity]\n\n- Tejas Engineering working on comprehensive TJ wear vs load capacity analysis for TTS6-Black\n- Will include pull capacity, multiple wear increments, and torque distribution\n- Similar analysis already completed for SPEARHEAD\n",
     "source": "TTS6-Black Connection",
     "sourceFile": "OCTG/Connections/TTS6-Black.md",
     "section": "Wear vs Load Capacity",
@@ -748,8 +736,8 @@
     }
   },
   {
-    "id": "chunk-57",
-    "text": "[TTS6-Black Connection - Combined Load Charts]\n\n- Axial + Torque safe operation chart available for TTS6-Black 2.875 7.90ppf\n- Parameters: conYS126, SF80, twt100, tgradeP100\n- Source: TTS6-Black Connection",
+    "id": "chunk-56",
+    "text": "[TTS6-Black Connection - Combined Load Charts]\n\n- Axial + Torque safe operation chart available for TTS6-Black 2.875 7.90ppf\n- Parameters: conYS126, SF80, twt100, tgradeP100\n",
     "source": "TTS6-Black Connection",
     "sourceFile": "OCTG/Connections/TTS6-Black.md",
     "section": "Combined Load Charts",
@@ -763,8 +751,8 @@
     }
   },
   {
-    "id": "chunk-58",
-    "text": "[Recuts Reference - Recut Connection Options for Used Tubing]\n\n### Used WTS-6 2-7/8\" 7.90ppf P-110 Recut Options (from Tejas Engineering, Apr 10 2026)\nTejas offers the following recut connection options:\n- **TTXS** -- CDS dated 4-10-2026 (2.875 7.80ppf P-110)\n- **TTNY** -- CDS dated 4-10-2026 (2.875 7.80ppf P-110)\n- **TTUS** -- CDS dated 4-10-2026 (2.875 7.90ppf P-110)\n- **TTUS-HT** -- CDS dated 4-10-2026 (2.875 7.90ppf P-110)\n\n**CRITICAL NOTE on material grade:** Yield and Rotating/Operating torque values in these CDSs are calculated based on 125 ksi YS material (what Tejas heat-treated P-110 is 90% of the time). For used tubing from other manufacturers, you MUST verify material grade meets Tejas requirements. If the material is standard P-110 (110 ksi), apply a correction factor of 110/125 = 0.88 (88%) to all Yield and Rotating/Operating torque values.\n\nThis is especially important for workover applications where torque is critical.\n\nSource: Recuts Reference",
+    "id": "chunk-57",
+    "text": "[Recuts Reference - Recut Connection Options for Used Tubing]\n\n### Used WTS-6 2-7/8\" 7.90ppf P-110 Recut Options (from Tejas Engineering, Apr 10 2026)\nTejas offers the following recut connection options:\n- **TTXS** -- CDS dated 4-10-2026 (2.875 7.80ppf P-110)\n- **TTNY** -- CDS dated 4-10-2026 (2.875 7.80ppf P-110)\n- **TTUS** -- CDS dated 4-10-2026 (2.875 7.90ppf P-110)\n- **TTUS-HT** -- CDS dated 4-10-2026 (2.875 7.90ppf P-110)\n\n**CRITICAL NOTE on material grade:** Yield and Rotating/Operating torque values in these CDSs are calculated based on 125 ksi YS material (what Tejas heat-treated P-110 is 90% of the time). For used tubing from other manufacturers, you MUST verify material grade meets Tejas requirements. If the material is standard P-110 (110 ksi), apply a correction factor of 110/125 = 0.88 (88%) to all Yield and Rotating/Operating torque values.\n\nThis is especially important for workover applications where torque is critical.\n",
     "source": "Recuts Reference",
     "sourceFile": "OCTG/Recuts.md",
     "section": "Recut Connection Options for Used Tubing",
@@ -779,8 +767,8 @@
     }
   },
   {
-    "id": "chunk-59",
-    "text": "[Recuts Reference - Recut Procedures by Connection]\n\n### SPEARHEAD\n- Has a dedicated Re-cut / Re-work procedure document\n- Confirmed by Tejas Engineering (Mar 30 2026) -- \"like we have for SPEARHEAD\"\n- 2F3R SPH service connection uses single start SPH thread and can be recut using same SPH threading insert\n- Source: Recuts Reference\n\n### TTS6-Black\n- Inspection procedures available: TTS Box Gaging Procedure (Rev 1), TTS Pin Gaging Procedure (Rev 1)\n- As of Mar 30 2026, Tejas Engineering was unsure if a separate recut/rework procedure doc exists for TTS6-Black (may exist with Tejas Engineering)\n- Source: Recuts Reference",
+    "id": "chunk-58",
+    "text": "[Recuts Reference - Recut Procedures by Connection]\n\n### SPEARHEAD\n- Has a dedicated Re-cut / Re-work procedure document\n- Confirmed by Tejas Engineering (Mar 30 2026) -- \"like we have for SPEARHEAD\"\n- 2F3R SPH service connection uses single start SPH thread and can be recut using same SPH threading insert\n\n### TTS6-Black\n- Inspection procedures available: TTS Box Gaging Procedure (Rev 1), TTS Pin Gaging Procedure (Rev 1)\n- As of Mar 30 2026, Tejas Engineering was unsure if a separate recut/rework procedure doc exists for TTS6-Black (may exist with Tejas Engineering)\n",
     "source": "Recuts Reference",
     "sourceFile": "OCTG/Recuts.md",
     "section": "Recut Procedures by Connection",
@@ -791,8 +779,8 @@
     }
   },
   {
-    "id": "chunk-60",
-    "text": "[Recuts Reference - Wear Limits and Recut Feasibility]\n\n### Reduced Torque at Worn ODs\n- Tejas Engineering created a \"Reduced Torque Capacities due to Tool Joint OD wear\" table (Mar 10 2026)\n- Numbers are exact from calculations (CDS values are rounded to nearest 50)\n- Available for Spearhead; similar analysis in progress for TTS6-Black\n- Source: Recuts Reference\n\n### Turnkey Wear Limits\n- Turnkey has their own wear limit practices (referenced by Tejas Engineering)\n- Tejas Engineering shared what Turnkey practices regarding wear limits alongside Tejas data\n- Source: Recuts Reference\n\n### Wear Terminology\n- \"Remaining upset OD\" or \"remaining wear life\" are correct terms for the OD-to-SC range\n- \"Wear area\" is incorrect -- that term describes contact area (sq inches) between tube upset and casing\n- \"Remaining body wall\" is analogous term used for tube body\n- Source: Recuts Reference",
+    "id": "chunk-59",
+    "text": "[Recuts Reference - Wear Limits and Recut Feasibility]\n\n### Reduced Torque at Worn ODs\n- Tejas Engineering created a \"Reduced Torque Capacities due to Tool Joint OD wear\" table (Mar 10 2026)\n- Numbers are exact from calculations (CDS values are rounded to nearest 50)\n- Available for Spearhead; similar analysis in progress for TTS6-Black\n\n### Turnkey Wear Limits\n- Turnkey has their own wear limit practices (referenced by Tejas Engineering)\n- Tejas Engineering shared what Turnkey practices regarding wear limits alongside Tejas data\n\n### Wear Terminology\n- \"Remaining upset OD\" or \"remaining wear life\" are correct terms for the OD-to-SC range\n- \"Wear area\" is incorrect -- that term describes contact area (sq inches) between tube upset and casing\n- \"Remaining body wall\" is analogous term used for tube body\n",
     "source": "Recuts Reference",
     "sourceFile": "OCTG/Recuts.md",
     "section": "Wear Limits and Recut Feasibility",
@@ -803,8 +791,8 @@
     }
   },
   {
-    "id": "chunk-61",
-    "text": "[Recuts Reference - Licensee Recutting]\n\n### Licensee Shops\n- Separate licensee lists exist for TTS6/TTS6-Black and TTWS/SPEARHEAD\n- Tejas Licensee Contact List (dated Oct 23 2025) available\n- Ashley Zamora at Tejas manages licensees\n- Source: Recuts Reference\n\n### Known Licensees / Under Review\n- **Pathfinder** -- Holds license for TTS6-Black, has most of what's needed to produce/recut SPEARHEAD (as of Feb 2 2026)\n- **Integrity Machine** (Odessa, W. Texas) -- Under review. Had optical comparator issue that needed resolution before audit (as of Feb 2 2026). As of Apr 7 2026, they claim to be ready but Tejas audit not yet completed.\n- Source: Recuts Reference\n\n### TTS6-Black Recut Identification\nWhen licensees recut TTS6-Black, they MUST include the thread relief grooves (unique Tejas identifier built into CNC program). This is a licensing requirement.\nSource: Recuts Reference",
+    "id": "chunk-60",
+    "text": "[Recuts Reference - Licensee Recutting]\n\n### Licensee Shops\n- Separate licensee lists exist for TTS6/TTS6-Black and TTWS/SPEARHEAD\n- Tejas Licensee Contact List (dated Oct 23 2025) available\n- Ashley Zamora at Tejas manages licensees\n\n### Known Licensees / Under Review\n- **Pathfinder** -- Holds license for TTS6-Black, has most of what's needed to produce/recut SPEARHEAD (as of Feb 2 2026)\n- **Integrity Machine** (Odessa, W. Texas) -- Under review. Had optical comparator issue that needed resolution before audit (as of Feb 2 2026). As of Apr 7 2026, they claim to be ready but Tejas audit not yet completed.\n\n### TTS6-Black Recut Identification\nWhen licensees recut TTS6-Black, they MUST include the thread relief grooves (unique Tejas identifier built into CNC program). This is a licensing requirement.\n",
     "source": "Recuts Reference",
     "sourceFile": "OCTG/Recuts.md",
     "section": "Licensee Recutting",
@@ -815,8 +803,8 @@
     }
   },
   {
-    "id": "chunk-62",
-    "text": "[Recuts Reference - Recut Cost Context]\n\n- Licensee shops charge for recuts; there is a Tejas licensing cost component passed through\n- \"I think you have these numbers\" -- Tejas Engineering to Alex, suggesting RigPal has pricing info\n- Source: Recuts Reference",
+    "id": "chunk-61",
+    "text": "[Recuts Reference - Recut Cost Context]\n\n- Licensee shops charge for recuts; there is a Tejas licensing cost component passed through\n- \"I think you have these numbers\" -- Tejas Engineering to Alex, suggesting RigPal has pricing info\n",
     "source": "Recuts Reference",
     "sourceFile": "OCTG/Recuts.md",
     "section": "Recut Cost Context",
@@ -827,7 +815,7 @@
     }
   },
   {
-    "id": "chunk-63",
+    "id": "chunk-62",
     "text": "[Benoit BEN-HT6 2-7/8\" 7.90# P-110 (Competitor) - Compiled Truth]\n\n### Overview\n\nImproved version of Benoit's legacy BTS-6 connection. Designed to increase torque capacity and connection life while maintaining **compatibility with BTS-6 and existing industry two-step connections** (i.e., PH6 interchangeable). Patent pending.\n\n### Tubular Data\n\n| Property | Value |\n|----------|-------|\n| Tube OD | 2.875 in |\n| Tube ID | 2.323 in |\n| Tube Wall | 0.276 in |\n| Drift Diameter | 2.229 in |\n| Pipe Body CSA | 2.254 sq.in |\n| Tension Yield | 247,900 lbs |\n| Compression Yield | 247,900 lbs |\n| Internal Pressure Yield | 18,480 psi |\n| Collapse Pressure Yield | 19,090 psi |\n| Bending Yield | 175.0 deg/100ft |\n| Torsion Yield | 14,160 ft-lb |\n\n### Connection Data\n\n| Property | Value | Efficiency |\n|----------|-------|------------|\n| **Connection OD** | **3.438 in** | |\n| Connection ID | 2.265 in | |\n| Make-up Loss | 3.050 in | |\n| Connection CSA | 2.417 sq.in | |\n| String Length (1.6 S/F) | 19,620 ft | |\n| Tension Yield | 265,900 lbs | 107% |\n| Compression Yield | 289,600 lbs | 117% |\n| Internal Pressure Yield | 18,480 psi | |\n| Collapse Pressure Yield | 19,090 psi | |\n| Bending Yield | 175.0 deg/100ft | |\n| Torsion Yield | 11,240 ft-lb | |\n| Operating Torque | 10,030 ft-lb | |\n\n### Make-Up Torque\n\n| Property | Value |\n|----------|-------|\n| Minimum Make-up Torque | 3,900 ft-lb |\n| Optimum Make-up Torque | 5,450 ft-lb |\n| Maximum Make-up Torque | 7,000 ft-lb |\n\n### Spearhead vs BEN-HT6 Comparison (2-7/8\" 7.90# P110)\n\n| Property | Spearhead | BEN-HT6 | Advantage |\n|----------|-----------|---------|-----------|\n| Connection OD | 3.525 in | 3.438 in | BEN-HT6 (smaller profile) |\n| Special Clearance OD | 3.312 in | N/A | Spearhead (offers SC option) |\n| Connection ID | 2.265 in | 2.265 in | Tie |\n| Tensile Efficiency | 121% | 107% | **Spearhead** |\n| Compression Efficiency | 121% | 117% | **Spearhead** |\n| Torque Efficiency | 108% | N/A | Spearhead |\n| Max Rotate/Operate Torque | 14,500 ft-lb | 10,030 ft-lb | **Spearhead (+44%)** |\n| Yield Torque | 15,300 ft-lb | 11,240 ft-lb | **Spearhead (+36%)** |\n| Optimum MUT | 4,250 ft-lb | 5,450 ft-lb | Similar |\n| Maximum MUT | 6,500 ft-lb | 7,000 ft-lb | Similar |\n| BSR | 1.25 | N/A | Spearhead (listed) |\n| PH6 Compatible | Yes | Yes (BTS-6 compatible) | Tie |\n\n**Key selling point for Spearhead:** Significantly higher torque capacity (44% more operating torque, 36% more yield torque) and better tensile/compression efficiency. Spearhead also offers special clearance OD option.\n\n---",
     "source": "Benoit BEN-HT6 Spec Comparison",
     "sourceFile": "RigPal/Specs/benoit-ht6-2875-790-p110.md",
@@ -843,8 +831,8 @@
     }
   },
   {
-    "id": "chunk-64",
-    "text": "[Tejas Licensee Program - Qualification Process]\n\nThree-step process managed by Ashley Zamora at Tejas:\n\n### Step 1: Questionnaire\n- Covers machining and inspection equipment\n- Documentation and certificates required\n- Must be received and approved before proceeding\n\n### Step 2: NDA and Audit\n- NDA is sent and signed\n- In-person audit performed by qualified TEJAS technician\n- Key equipment requirement: optical comparator (for inspecting seal and torque shoulders)\n\n### Step 3: License Agreement\n- License Agreement signed by both parties\n- TEJAS issues a License Certificate to the licensee\n\nSource: Tejas Licensee Program",
+    "id": "chunk-63",
+    "text": "[Tejas Licensee Program - Qualification Process]\n\nThree-step process managed by Ashley Zamora at Tejas:\n\n### Step 1: Questionnaire\n- Covers machining and inspection equipment\n- Documentation and certificates required\n- Must be received and approved before proceeding\n\n### Step 2: NDA and Audit\n- NDA is sent and signed\n- In-person audit performed by qualified TEJAS technician\n- Key equipment requirement: optical comparator (for inspecting seal and torque shoulders)\n\n### Step 3: License Agreement\n- License Agreement signed by both parties\n- TEJAS issues a License Certificate to the licensee\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
     "section": "Qualification Process",
@@ -855,8 +843,8 @@
     }
   },
   {
-    "id": "chunk-65",
-    "text": "[Tejas Licensee Program - Licensee Lists]\n\n- Separate licensee lists maintained for:\n  - TTS6 / TTS6-Black\n  - TTWS / SPEARHEAD\n- Tejas Licensee Contact List exists (dated Oct 23 2025)\n- Source: Tejas Licensee Program",
+    "id": "chunk-64",
+    "text": "[Tejas Licensee Program - Licensee Lists]\n\n- Separate licensee lists maintained for:\n  - TTS6 / TTS6-Black\n  - TTWS / SPEARHEAD\n- Tejas Licensee Contact List exists (dated Oct 23 2025)\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
     "section": "Licensee Lists",
@@ -867,8 +855,8 @@
     }
   },
   {
-    "id": "chunk-66",
-    "text": "[Tejas Licensee Program - Known Licensees and Status]\n\n### Pathfinder\n- Holds license for making TTS6-Black\n- Has most of what is needed to produce/recut SPEARHEAD\n- Status as of Feb 2 2026: reviewing for SPEARHEAD capability\n- Source: Tejas Licensee Program\n\n### Integrity Machine (Odessa, W. Texas)\n- Under review for SPEARHEAD license\n- Issue identified: optical comparator was down and being replaced (as of Feb 2 2026)\n- Cannot inspect SPEARHEAD seal and torque shoulders without it\n- As of Apr 7 2026: Integrity claims they have everything needed and are ready, but Tejas audit not scheduled until end of month\n- CP Energy (Ronnie Vaughn) wants to speed up approval\n- Source: Tejas Licensee Program",
+    "id": "chunk-65",
+    "text": "[Tejas Licensee Program - Known Licensees and Status]\n\n### Pathfinder\n- Holds license for making TTS6-Black\n- Has most of what is needed to produce/recut SPEARHEAD\n- Status as of Feb 2 2026: reviewing for SPEARHEAD capability\n\n### Integrity Machine (Odessa, W. Texas)\n- Under review for SPEARHEAD license\n- Issue identified: optical comparator was down and being replaced (as of Feb 2 2026)\n- Cannot inspect SPEARHEAD seal and torque shoulders without it\n- As of Apr 7 2026: Integrity claims they have everything needed and are ready, but Tejas audit not scheduled until end of month\n- CP Energy (Ronnie Vaughn) wants to speed up approval\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
     "section": "Known Licensees and Status",
@@ -879,8 +867,8 @@
     }
   },
   {
-    "id": "chunk-67",
-    "text": "[Tejas Licensee Program - Licensee Requirements]\n\n### TTS6-Black Recutting\n- Must include thread relief grooves (unique Tejas identifier in CNC program)\n- This is a mandatory licensing requirement\n- Source: Tejas Licensee Program\n\n### SPEARHEAD Thread Protectors\n- TEJAS does NOT license thread protector production\n- Mold-injection requires connection drawings (not shared)\n- TEJAS keeps protectors in stock for any volume\n- Tejas Engineering manages thread protector production at Tejas\n- Source: Tejas Licensee Program",
+    "id": "chunk-66",
+    "text": "[Tejas Licensee Program - Licensee Requirements]\n\n### TTS6-Black Recutting\n- Must include thread relief grooves (unique Tejas identifier in CNC program)\n- This is a mandatory licensing requirement\n\n### SPEARHEAD Thread Protectors\n- TEJAS does NOT license thread protector production\n- Mold-injection requires connection drawings (not shared)\n- TEJAS keeps protectors in stock for any volume\n- Tejas Engineering manages thread protector production at Tejas\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
     "section": "Licensee Requirements",
@@ -891,8 +879,8 @@
     }
   },
   {
-    "id": "chunk-68",
-    "text": "[Tejas Licensee Program - Cost Structure]\n\n- There is a Tejas licensing cost component that gets passed through in recut pricing\n- RigPal should have these numbers on file\n- Source: Tejas Licensee Program",
+    "id": "chunk-67",
+    "text": "[Tejas Licensee Program - Cost Structure]\n\n- There is a Tejas licensing cost component that gets passed through in recut pricing\n- RigPal should have these numbers on file\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
     "section": "Cost Structure",
