@@ -52,6 +52,10 @@ const SOURCES = [
     defaults: { connection_type: 'General', data_type: 'procedure', topic: 'Recuts Reference' }
   },
   {
+    path: 'OCTG/Spearhead-FAQ.md',
+    defaults: { connection_type: 'Spearhead', data_type: 'faq', topic: 'Spearhead FAQ' }
+  },
+  {
     path: 'RigPal/Specs/benoit-ht6-2875-790-p110.md',
     defaults: { connection_type: 'BEN-HT6', data_type: 'comparison', topic: 'Benoit BEN-HT6 Spec Comparison' }
   },

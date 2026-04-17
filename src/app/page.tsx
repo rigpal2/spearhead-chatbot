@@ -474,25 +474,8 @@ const MessageBubble = memo(function MessageBubble({
             </div>
           )}
 
-          {msg.sources && msg.sources.length > 0 && !msg.isStreaming && (
-            <SourcesSection sources={msg.sources} />
-          )}
         </div>
       </div>
     </div>
   );
 });
-
-function SourcesSection({ sources }: { sources: string[] }) {
-  if (!sources || sources.length === 0) return null;
-  const label = sources[0] || 'Based on Spearhead technical specifications';
-
-  return (
-    <div
-      className="mt-3 pt-2.5 text-[11px] italic"
-      style={{ borderTop: '1px solid #F4F4F5', color: '#71717A' }}
-    >
-      {label}
-    </div>
-  );
-}

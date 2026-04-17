@@ -816,6 +816,345 @@
   },
   {
     "id": "chunk-62",
+    "text": "[Spearhead FAQ - Introduction]\n\nAuthoritative Q&A sourced from the Spearhead reference deck and Tejas engineering. Answers should be direct and lead with the concrete value or fact.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Introduction",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-63",
+    "text": "[Spearhead FAQ - How many recuts does Spearhead allow?]\n\nSpearhead supports **up to 4 box recuts and 4 pin recuts** per connection. For both the 2-3/8\" and 2-7/8\" sizes with a 9-inch tool joint, this delivers extended usable life and meaningful lifecycle cost savings. Typical recut cost runs **$50 to $130 per end**. When demand reaches 3 to 5 strings within a basin, local servicing can be established to reduce turnaround time.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "How many recuts does Spearhead allow?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-7/8",
+        "2-3/8"
+      ]
+    }
+  },
+  {
+    "id": "chunk-64",
+    "text": "[Spearhead FAQ - What is the rotating torque for 2-7/8\" Spearhead?]\n\n**Rotating Torque: 13,900 lbf-ft** for 2-7/8\" 7.90# P-110 Spearhead. Yield Torque is 15,400 lbf-ft. Note: rotating torque is often limited by workover rig equipment, not the connection itself.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What is the rotating torque for 2-7/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-7/8"
+      ],
+      "grade": "P-110"
+    }
+  },
+  {
+    "id": "chunk-65",
+    "text": "[Spearhead FAQ - What is the rotating torque for 2-3/8\" Spearhead?]\n\n**Rotating Torque: 8,600 lbf-ft** for 2-3/8\" 5.95# P-110 Spearhead. Yield Torque is 9,100 lbf-ft.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What is the rotating torque for 2-3/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-3/8"
+      ],
+      "grade": "P-110"
+    }
+  },
+  {
+    "id": "chunk-66",
+    "text": "[Spearhead FAQ - What are the make-up torque values for 2-7/8\" Spearhead?]\n\n- Minimum Make-Up Torque: **2,000 lbf-ft**\n- Optimum Make-Up Torque: **4,250 lbf-ft**\n- Maximum Make-Up Torque: **6,500 lbf-ft**\n- Low Shoulder Torque: 300 lbf-ft\n- High Shoulder Torque: 1,500 lbf-ft",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the make-up torque values for 2-7/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-67",
+    "text": "[Spearhead FAQ - What are the make-up torque values for 2-3/8\" Spearhead?]\n\n- Minimum Make-Up Torque: **2,000 lbf-ft**\n- Optimum Make-Up Torque: **4,250 lbf-ft**\n- Maximum Make-Up Torque: **6,500 lbf-ft**\n- Low Shoulder Torque: 300 lbf-ft\n- High Shoulder Torque: 1,500 lbf-ft",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the make-up torque values for 2-3/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-68",
+    "text": "[Spearhead FAQ - Why is the make-up torque range so wide?]\n\nThe connection torque capacity is much higher than what many workover rigs and rental crews can deliver without damaging the pipe. The make-up range is intentionally wide so crews can achieve a safe, repeatable preload on lower-torque rigs while still allowing higher preload where equipment permits.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Why is the make-up torque range so wide?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-69",
+    "text": "[Spearhead FAQ - How is torque spread across the connection?]\n\nSpearhead uses three independent load-sharing elements:\n- **44% Double-Lead Negative-Angle Threads** — primary torsional load path. Converts torque into axial preload; negative-angle geometry resists separation.\n- **38% Dual Torque Shoulders (Internal & External)** — engage at final make-up, absorb axial loads, and prevent over-rotation.\n- **18% Pin Nose Metal-to-Metal Primary Seal** — radial interference seal for gas-tight integrity under pressure and thermal cycling. Minimal structural load.\n\nNo single point of failure under extreme torque conditions.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "How is torque spread across the connection?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-70",
+    "text": "[Spearhead FAQ - What thread compound does Spearhead use?]\n\n**BESTOLIFE 2000** with a **friction factor of 0.90** is the standard recommendation. If you use a compound with a higher or lower FF, torque values must be adjusted accordingly.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What thread compound does Spearhead use?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-71",
+    "text": "[Spearhead FAQ - Is there a documented inspection procedure?]\n\nYes. A detailed inspection procedure is available. Similar to PH6, you can perform \"Go / No-Go\" inspections on the pipe using a screw gauge. Spearhead also has a dedicated re-cut and re-work procedure document.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Is there a documented inspection procedure?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-72",
+    "text": "[Spearhead FAQ - What is the running history of Spearhead?]\n\nSpearhead is the integral-joint evolution of the TTWS platform (a threaded-and-coupled connection). **Spearhead has experienced no connection-related failures to date**, and the underlying TTWS platform has proven reliable across more than **8.5 million feet** of run workstrings. Bakken field performance across 27 wells and 7,985 joints — averaging ~32,000 ft well depth — shows an overall recut rate of only **1.30% per joint** and **0.243% per make-and-break event**.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What is the running history of Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-73",
+    "text": "[Spearhead FAQ - How much wear life does Spearhead have before Special Clearance compared to PH6?]\n\nRemaining wear life = available OD wear allowance down to the Special Clearance (SC) diameter, calculated as (OD − SC) / SC.\n\n- **2-3/8\":** Spearhead 7.84% vs PH6 4.46% — **about 76% more remaining wear life**\n- **2-7/8\":** Spearhead 6.43% vs PH6 3.80% — **about 69% more remaining wear life**\n\nBy the same SC-based method, Spearhead shows a materially larger remaining wear-life margin in both sizes.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "How much wear life does Spearhead have before Special Clearance compared to PH6?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-7/8",
+        "2-3/8"
+      ]
+    }
+  },
+  {
+    "id": "chunk-74",
+    "text": "[Spearhead FAQ - How does Spearhead compare to PH6?]\n\n| Attribute | Spearhead | PH6 |\n|---|---|---|\n| Torque capacity | Significantly higher | Industry standard |\n| Design | Integral joint, inertia-welded, dual shoulder + thread + seal | Two-step thread, shoulder-dependent |\n| Wear life (2-7/8\" to SC) | 6.43% | 3.80% |\n| Wear life (2-3/8\" to SC) | 7.84% | 4.46% |\n| Rig running procedure | Formal procedure available | Varies |\n| Recut capability | Up to 4 box + 4 pin recuts | Limited |\n| Tool joint | Inertia-welded, customizable OD/length/metallurgy | Upset-end |\n\nSpearhead is engineered for superlateral and future hyperlateral wells where PH6 torque limits and wear life become operational constraints.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "How does Spearhead compare to PH6?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-7/8",
+        "2-3/8"
+      ]
+    }
+  },
+  {
+    "id": "chunk-75",
+    "text": "[Spearhead FAQ - What are the key dimensions for 2-7/8\" Spearhead?]\n\n- Outside Diameter (pipe): 2.875 in\n- Wall Thickness: 0.276 in\n- Inside Diameter (pipe): 2.323 in\n- API Drift Diameter: 2.229 in\n- **Connection OD (Tool Joint): 3.525 in**\n- **Special Clearance OD: 3.312 in**\n- Connection ID: 2.265 in\n- Tool-Joint Length: 9.000 in\n- Make-Up Loss: 2.991 in\n- Threads per Inch: 6",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the key dimensions for 2-7/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-7/8"
+      ]
+    }
+  },
+  {
+    "id": "chunk-76",
+    "text": "[Spearhead FAQ - What are the key dimensions for 2-3/8\" Spearhead?]\n\n- Outside Diameter (pipe): 2.375 in\n- Wall Thickness: 0.254 in\n- Inside Diameter (pipe): 1.867 in\n- API Drift Diameter: 1.773 in\n- **Connection OD (Tool Joint): 3.000 in**\n- **Special Clearance OD: 2.782 in**\n- Connection ID: 1.805 in\n- Tool-Joint Length: 9.000 in\n- Make-Up Loss: 2.991 in\n- Threads per Inch: 6",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the key dimensions for 2-3/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "sizes": [
+        "2-3/8"
+      ]
+    }
+  },
+  {
+    "id": "chunk-77",
+    "text": "[Spearhead FAQ - What is the material grade of Spearhead?]\n\nSpearhead tool joints are **P-110**, with heat-treated material typically at **125 ksi minimum yield stress** (Tejas standard). Specifications:\n- Minimum Yield Stress: 110,000 psi (standard P-110)\n- Maximum Yield Stress: 140,000 psi\n- Minimum Tensile Stress: 125,000 psi\n\nTejas heat-treated P-110 runs 125 ksi 90% of the time. For used tubing from other manufacturers, verify material grade meets Tejas requirements — if the material is standard 110 ksi P-110, apply a correction factor of 110/125 = 0.88 to Yield and Rotating/Operating torque values.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What is the material grade of Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ",
+      "grade": "P-110"
+    }
+  },
+  {
+    "id": "chunk-78",
+    "text": "[Spearhead FAQ - What are the load capacities for 2-7/8\" Spearhead?]\n\n- Tensile Yield: **247,900 lbf**\n- Internal Yield Pressure: 18,480 psi\n- Collapse Pressure: 19,090 psi\n- Hydrostatic Test Pressure: 10,000 psi\n- Torsional Yield: 14,160 lbf-ft\n- Bending Rate: 175° per 100 ft\n- Connection Tensile Efficiency: 122% of pipe body\n- Connection Torque Efficiency: 109% of pipe body",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the load capacities for 2-7/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-79",
+    "text": "[Spearhead FAQ - What are the load capacities for 2-3/8\" Spearhead?]\n\n- Tensile Yield: **186,100 lbf**\n- Internal Yield Pressure: 20,590 psi\n- Collapse Pressure: 21,010 psi\n- Hydrostatic Test Pressure: 10,000 psi\n- Torsional Yield: 8,600 lbf-ft\n- Bending Rate: 212° per 100 ft\n- Connection Tensile Efficiency: 115% of pipe body\n- Connection Torque Efficiency: 106% of pipe body",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What are the load capacities for 2-3/8\" Spearhead?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-80",
+    "text": "[Spearhead FAQ - Is Spearhead gas-tight?]\n\nYes. Spearhead includes a **radial metal-to-metal primary seal** at the pin nose that provides gas-tight integrity under pressure and thermal cycling. This seal carries only 18% of the torque share — structural load is handled by the thread and torque shoulders — so sealing integrity is preserved under high torque and axial load.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Is Spearhead gas-tight?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-81",
+    "text": "[Spearhead FAQ - What measurable savings come from running 32.5 ft joints instead of 31.0 ft joints?]\n\nOn a 4-well Permian plug drill-out pad:\n- Joints to TD drop from 710 to 677 (**33 fewer per well**)\n- Total connection events per well drop from 1,418 to 1,352 (**66 fewer per well**)\n- Connection time reduced by 3.30 hours per well\n- Across 4 wells, total pad time drops from 313.60 to 300.40 hours — **13.20 hours (0.55 days) saved**\n- Pad-level cost drops from $124,917 to $119,659 — **total savings of $5,258** ($4,488 rig time + $770 daily adders)",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What measurable savings come from running 32.5 ft joints instead of 31.0 ft joints?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-82",
+    "text": "[Spearhead FAQ - Where can I get Spearhead recut and serviced?]\n\nAuthorized service locations:\n- **West Texas:** Pathfinder (Odessa, TX); Integrity Machine & Supply (Odessa, TX)\n- **West Virginia:** Turnkey Pipe Solutions LLC (Bridgeport, WV)\n- **Bakken:** Bakken Thread Repair (Killdeer, ND); CP Machine Inc (Williston, ND)\n- **New Mexico:** NOV (Aztec, NM — pending)\n\nTejas can approve and license additional service vendors at preferred customer locations. When demand reaches 3 to 5 strings within a basin, local servicing can be established to reduce turnaround time.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Where can I get Spearhead recut and serviced?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-83",
+    "text": "[Spearhead FAQ - What about the TTS6-Black PH6-compatible option?]\n\nTTS6-Black is Tejas Tubular's PH6-compatible workstring connection — a direct interchange option when a PH6-thread-form tubing is required. It is a separate product line from Spearhead. Spearhead delivers higher torque capacity and extended wear life; TTS6-Black delivers PH6 thread compatibility with Tejas quality control.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "What about the TTS6-Black PH6-compatible option?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-84",
+    "text": "[Spearhead FAQ - Is Spearhead patented?]\n\nYes. The Tejas Tubular Spearhead Tubing Connection is covered under US Patent 10,024,119 — engineered specifically for high-torque, superlateral, frac-plug drill-outs.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Is Spearhead patented?",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-85",
+    "text": "[Spearhead FAQ - Key Spearhead features at a glance]\n\n- **Dual negative-angle torque shoulders (internal & external)** — secondary seal, 38% torque share\n- **Radial metal-to-metal gas-tight seal** — 18% torque share, maintains sealing under high torque and axial load\n- **Jump-out-resistant double-lead negative-angle thread** — 44% torque share, enables deeper stabbing and faster make-up\n- **Extended re-cut capability (pin & box)** — increases service life with 9\" – 10\" tool joints\n- **Inertia-welded, integral-joint architecture** — reduces ovality and eccentricity vs upset-end designs\n- **Customizable tool joints** — adjustable OD, length, and metallurgy to meet specific operational requirements",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Key Spearhead features at a glance",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-86",
+    "text": "[Spearhead FAQ - Bakken Field Performance (27 wells, 7,985 joints, ~32,000 ft avg depth)]\n\n- Approx footage run: ~255,520 ft\n- Total joints: 7,985\n- Total make-and-break events: 42,880\n- **Recut per joint: 1.30%**\n- **Recut per make-and-break event: 0.243%**\n- 27 wells · 104 total recuts\n\nPer-joint recut rate ranged from 0.10% (best location) to 3.70% (worst). Per-make-and-break recut rate ranged from 0.017% to 0.714%.",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Bakken Field Performance (27 wells, 7,985 joints, ~32,000 ft avg depth)",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-87",
+    "text": "[Spearhead FAQ - Cost Summary (4-well Permian drill-out pad)]\n\n- 33 fewer joints per well (66 fewer connection events)\n- 13.20 hours saved per 4-well pad\n- $5,258 savings per 4-well pad on connection time and daily adders alone\n- Typical recut cost: $50–$130 per end\n- Up to 4 box and 4 pin recuts per connection extend usable life",
+    "source": "Spearhead FAQ",
+    "sourceFile": "OCTG/Spearhead-FAQ.md",
+    "section": "Cost Summary (4-well Permian drill-out pad)",
+    "metadata": {
+      "connection_type": "Spearhead",
+      "data_type": "faq",
+      "topic": "Spearhead FAQ"
+    }
+  },
+  {
+    "id": "chunk-88",
     "text": "[Benoit BEN-HT6 2-7/8\" 7.90# P-110 (Competitor) - Compiled Truth]\n\n### Overview\n\nImproved version of Benoit's legacy BTS-6 connection. Designed to increase torque capacity and connection life while maintaining **compatibility with BTS-6 and existing industry two-step connections** (i.e., PH6 interchangeable). Patent pending.\n\n### Tubular Data\n\n| Property | Value |\n|----------|-------|\n| Tube OD | 2.875 in |\n| Tube ID | 2.323 in |\n| Tube Wall | 0.276 in |\n| Drift Diameter | 2.229 in |\n| Pipe Body CSA | 2.254 sq.in |\n| Tension Yield | 247,900 lbs |\n| Compression Yield | 247,900 lbs |\n| Internal Pressure Yield | 18,480 psi |\n| Collapse Pressure Yield | 19,090 psi |\n| Bending Yield | 175.0 deg/100ft |\n| Torsion Yield | 14,160 ft-lb |\n\n### Connection Data\n\n| Property | Value | Efficiency |\n|----------|-------|------------|\n| **Connection OD** | **3.438 in** | |\n| Connection ID | 2.265 in | |\n| Make-up Loss | 3.050 in | |\n| Connection CSA | 2.417 sq.in | |\n| String Length (1.6 S/F) | 19,620 ft | |\n| Tension Yield | 265,900 lbs | 107% |\n| Compression Yield | 289,600 lbs | 117% |\n| Internal Pressure Yield | 18,480 psi | |\n| Collapse Pressure Yield | 19,090 psi | |\n| Bending Yield | 175.0 deg/100ft | |\n| Torsion Yield | 11,240 ft-lb | |\n| Operating Torque | 10,030 ft-lb | |\n\n### Make-Up Torque\n\n| Property | Value |\n|----------|-------|\n| Minimum Make-up Torque | 3,900 ft-lb |\n| Optimum Make-up Torque | 5,450 ft-lb |\n| Maximum Make-up Torque | 7,000 ft-lb |\n\n### Spearhead vs BEN-HT6 Comparison (2-7/8\" 7.90# P110)\n\n| Property | Spearhead | BEN-HT6 | Advantage |\n|----------|-----------|---------|-----------|\n| Connection OD | 3.525 in | 3.438 in | BEN-HT6 (smaller profile) |\n| Special Clearance OD | 3.312 in | N/A | Spearhead (offers SC option) |\n| Connection ID | 2.265 in | 2.265 in | Tie |\n| Tensile Efficiency | 121% | 107% | **Spearhead** |\n| Compression Efficiency | 121% | 117% | **Spearhead** |\n| Torque Efficiency | 108% | N/A | Spearhead |\n| Max Rotate/Operate Torque | 14,500 ft-lb | 10,030 ft-lb | **Spearhead (+44%)** |\n| Yield Torque | 15,300 ft-lb | 11,240 ft-lb | **Spearhead (+36%)** |\n| Optimum MUT | 4,250 ft-lb | 5,450 ft-lb | Similar |\n| Maximum MUT | 6,500 ft-lb | 7,000 ft-lb | Similar |\n| BSR | 1.25 | N/A | Spearhead (listed) |\n| PH6 Compatible | Yes | Yes (BTS-6 compatible) | Tie |\n\n**Key selling point for Spearhead:** Significantly higher torque capacity (44% more operating torque, 36% more yield torque) and better tensile/compression efficiency. Spearhead also offers special clearance OD option.\n\n---",
     "source": "Benoit BEN-HT6 Spec Comparison",
     "sourceFile": "RigPal/Specs/benoit-ht6-2875-790-p110.md",
@@ -831,7 +1170,7 @@
     }
   },
   {
-    "id": "chunk-63",
+    "id": "chunk-89",
     "text": "[Tejas Licensee Program - Qualification Process]\n\nThree-step process managed by Ashley Zamora at Tejas:\n\n### Step 1: Questionnaire\n- Covers machining and inspection equipment\n- Documentation and certificates required\n- Must be received and approved before proceeding\n\n### Step 2: NDA and Audit\n- NDA is sent and signed\n- In-person audit performed by qualified TEJAS technician\n- Key equipment requirement: optical comparator (for inspecting seal and torque shoulders)\n\n### Step 3: License Agreement\n- License Agreement signed by both parties\n- TEJAS issues a License Certificate to the licensee\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
@@ -843,7 +1182,7 @@
     }
   },
   {
-    "id": "chunk-64",
+    "id": "chunk-90",
     "text": "[Tejas Licensee Program - Licensee Lists]\n\n- Separate licensee lists maintained for:\n  - TTS6 / TTS6-Black\n  - TTWS / SPEARHEAD\n- Tejas Licensee Contact List exists (dated Oct 23 2025)\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
@@ -855,7 +1194,7 @@
     }
   },
   {
-    "id": "chunk-65",
+    "id": "chunk-91",
     "text": "[Tejas Licensee Program - Known Licensees and Status]\n\n### Pathfinder\n- Holds license for making TTS6-Black\n- Has most of what is needed to produce/recut SPEARHEAD\n- Status as of Feb 2 2026: reviewing for SPEARHEAD capability\n\n### Integrity Machine (Odessa, W. Texas)\n- Under review for SPEARHEAD license\n- Issue identified: optical comparator was down and being replaced (as of Feb 2 2026)\n- Cannot inspect SPEARHEAD seal and torque shoulders without it\n- As of Apr 7 2026: Integrity claims they have everything needed and are ready, but Tejas audit not scheduled until end of month\n- CP Energy (Ronnie Vaughn) wants to speed up approval\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
@@ -867,7 +1206,7 @@
     }
   },
   {
-    "id": "chunk-66",
+    "id": "chunk-92",
     "text": "[Tejas Licensee Program - Licensee Requirements]\n\n### TTS6-Black Recutting\n- Must include thread relief grooves (unique Tejas identifier in CNC program)\n- This is a mandatory licensing requirement\n\n### SPEARHEAD Thread Protectors\n- TEJAS does NOT license thread protector production\n- Mold-injection requires connection drawings (not shared)\n- TEJAS keeps protectors in stock for any volume\n- Tejas Engineering manages thread protector production at Tejas\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",
@@ -879,7 +1218,7 @@
     }
   },
   {
-    "id": "chunk-67",
+    "id": "chunk-93",
     "text": "[Tejas Licensee Program - Cost Structure]\n\n- There is a Tejas licensing cost component that gets passed through in recut pricing\n- RigPal should have these numbers on file\n",
     "source": "Tejas Licensee Program",
     "sourceFile": "OCTG/Licensee-Program.md",

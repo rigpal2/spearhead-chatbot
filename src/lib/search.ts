@@ -144,6 +144,11 @@ export class BM25Index {
         score *= 1.05;
       }
 
+      // FAQ chunks are curated, direct answers — prioritize them heavily
+      if (chunk.metadata.data_type === 'faq') {
+        score *= 1.6;
+      }
+
       if (score > 0) {
         scores.push({ index: i, score });
       }
