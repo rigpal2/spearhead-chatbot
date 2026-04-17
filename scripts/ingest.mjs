@@ -86,6 +86,43 @@ function stripPhoneNumbers(text) {
   return text.replace(/\b\d{3}[.-]\d{3}[.-]\d{4}\b/g, '[phone removed]');
 }
 
+// Remove personal name attributions from source text. The chatbot should cite
+// documents/specifications, never individuals.
+const PERSONAL_NAMES = [
+  'Dimitris Katsareas',
+  'Alex Champagne',
+  'John Champagne',
+  'Al Aung',
+  'Frank Martinez',
+  'Alex Zuniga',
+  'Katsareas',
+  'Dimitris',
+  'Dimitri',
+];
+
+function stripPersonalNames(text, topic) {
+  // Remove "Source: <Name>, ..." attributions entirely and replace with a generic doc reference.
+  const generic = `Source: ${topic}`;
+  let out = text;
+
+  // Collapse source lines that lead with personal names into the generic form.
+  out = out.replace(
+    /Source:\s*[^\n]*?(?:Dimitris(?:\s+Katsareas)?|Katsareas|Alex\s+Champagne|John\s+Champagne|Al\s+Aung|Frank\s+Martinez|Alex\s+Zuniga)[^\n]*/gi,
+    generic
+  );
+
+  // Strip any remaining inline personal-name occurrences.
+  for (const name of PERSONAL_NAMES) {
+    const re = new RegExp(`\\b${name.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'g');
+    out = out.replace(re, 'Tejas Engineering');
+  }
+
+  // Deduplicate consecutive generic source lines.
+  out = out.replace(/(Source:\s*[^\n]+)(?:\n+\1)+/g, '$1');
+
+  return out;
+}
+
 function splitIntoSections(content) {
   const sections = [];
   const lines = content.split('\n');
@@ -190,6 +227,7 @@ for (const source of SOURCES) {
       let text = chunk.text;
       text = stripEmails(text);
       text = stripPhoneNumbers(text);
+      text = stripPersonalNames(text, source.defaults.topic);
 
       if (text.length < 80) continue;
 
